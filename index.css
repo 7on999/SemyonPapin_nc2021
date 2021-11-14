@@ -1,0 +1,170 @@
+body {
+  background-color:rgba(219, 212, 212, 0.789);
+}
+
+h1 {
+  text-align: center;
+}
+
+.editText {
+  background-color: rgba(222, 135, 233, 0.789);
+  padding: 20px;
+}
+
+.space{
+  margin-top: 30px;
+  height: 30px;
+  background-color: saddlebrown;
+  color:black;
+  text-align: center;
+  font-weight: bold;
+  vertical-align: center;
+}
+
+.testP {
+  text-align: center;
+  background-color:greenyellow
+}
+
+.FR {
+  float:right
+}
+
+.secondDiv div{
+  text-align: center;;
+  width:100px;
+  height: 100px;
+  background-color:forestgreen;
+  float:left;
+  margin: 50px 310px 30px 0;
+}
+
+.secondDiv div:last-child{
+  margin: 50px 0 30px 0;
+  background-color:gray
+} 
+
+.secondDiv div span:nth-child(1n){
+  line-height: 100px;
+  vertical-align: middle;
+}
+
+
+.thirdGroupDiv{
+  background-color:honeydew;
+  height: 200px;
+  clear:both;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  text-align: center;
+}
+
+.thirdGroupDiv div{
+  line-height: 100px;
+}
+
+.thirdGroupDiv div span{
+  vertical-align: middle;
+}
+
+.thirdGroupDiv :nth-child(1n){
+ height: 100px;
+ width: 100px;
+ background-color:gold;
+}
+
+#SS {
+  margin-left: calc(100%/2);
+}
+
+.position{
+  /* width: 100vw; */
+  position: relative;
+ background-color:coral;
+ height: 500px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+
+div.position div{
+  background-color:rgb(44, 122, 182);
+  height: 90px;
+  width:90px;
+  line-height: 90px;
+  text-align: center;
+ }
+
+ div.position div span{
+  vertical-align: middle;
+  background-color:cornflowerblue;
+
+ }
+
+ div.position div#special1,
+ div.position div#special2,
+ div.position div#special3{
+  background-color:rgb(182, 44, 44);
+  top:10%;
+ }
+ 
+ div.position div#special1 span,
+ div.position div#special2 span,
+ div.position div#special3 span{
+  background-color:forestgreen;
+
+ }
+
+ #special1{
+  position: absolute;
+  left: 0%;
+ }
+
+ #special2{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+ }
+
+
+ #special3{
+  position: absolute;
+  left: 100%;
+  transform: translateX(-100%)
+ }
+
+
+ #z {
+position: relative;
+}
+
+#z1 {
+  position: absolute;
+  display: inline-block;
+  left:0;
+  width: 150px;
+  height: 150px;
+ background-color:red;
+ z-index: 1;
+}
+
+ #z2 {
+  position: absolute;
+  display: inline-block;
+  left:10%;
+   width: 150px;
+   height: 150px;
+  background-color:blue
+}
+
+#z3 {
+  position: absolute;
+  display: inline-block;
+  left:15%;
+  width: 150px;
+  height: 150px;
+ background-color:green
+}
