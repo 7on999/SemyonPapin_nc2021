@@ -14,186 +14,126 @@
 
 <body>
 
-  <div class="form-group">
-    <label>
-        <input type="checkbox"  class="real-checkbox">
-        <span class="custom-checkbox"> </span>
-        Приготовить ужин
-    </label>
-</div>
-
- <br/>
-  
-  <a href='https://www.championat.com/'>перейти сайт спортивных новостей</a>
-  <br/>
-  <a href="#x">перейти в текстовое поле с помощью якоря</a>
-  <br/>
-  <a href="#">заглушка</a>
-  <h4>ссылка на сайт по картинке:</h4>
-  <a href='https://www.google.com/' target='_blank'> <img style='width:100px'
-      src='https://pbs.twimg.com/profile_images/1045580248467886080/_uwwJdr3_400x400.jpg' /> </a>
-  <br />
-  <span>телефон для связи:</span><a href="tel:+7969929339"> 8-965-646-999</a>
-  <br />
-
-  <span> ссылка на адрес электронной почты:</span>
-  <a href="mailto:example@mail.ru">example@mail.ru</a>
- <div id="b"> <span>просто див</span></div>
-  <h4>Пример таблицы:</h4>
-  <table class='example'>
-    <tr>
-      <th>Студент</th>
-      <th>Биология</th>
-      <th>Алгебра</th>
-      <th>История</th>
-      <th>Средняя</th>
-    </tr>
-    <tr>
-      <td>Иванов</td>
-      <td>4</td>
-      <td>4</td>
-      <td>4</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Петров</td>
-      <td>5</td>
-      <td>4</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Сидоров</td>
-      <td>4</td>
-      <td>3</td>
-      <td>5</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Фетисов</td>
-      <td>3</td>
-      <td>5</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Федотов</td>
-      <td>3</td>
-      <td>5</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-  </table>
-
-  <h4>Ненумерованный список:</h4>
-  <ul>
-    <li>React</li>
-    <li>Angular</li>
-    <li>Vue</li>
-  </ul>
-
-  <h4>Нумерованный список:</h4>
-  <ol type='I'>
-    <li>Москва</li>
-    <li>Питер</li>
-    <li>Краснодар</li>
-    <li>Красноярск</li>
-    <li>Владимир</li>
-  </ol>
-
-  <h4> Список определентий:</h4>
-  <dl>
-    <dt>Режиссер:</dt>
-    <dd>Петр Точилин</dd>
-    <dt>В ролях:</dt>
-    <dd>Андрей Гайдулян</dd>
-    <dd>Алексей Гаврилов</dd>
-    <dd>Виталий Гогунский</dd>
-    <dd>Мария Кожевникова</dd>
-  </dl>
+  <header>
+    <div>
+      <img src='https://upload.wikimedia.org/wikipedia/ru/thumb/9/98/Real_Madrid.png/178px-Real_Madrid.png' />
+      <img
+        src='data:image/jpeg;base64,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' />
+      <img
+        src='https://upload.wikimedia.org/wikipedia/ru/thumb/c/c1/Atletico_Madrid_logo.svg/1200px-Atletico_Madrid_logo.svg.png' />
+    </div>
+    <div>
+      <span> SPORTBOX </span>
+      <span> МАТЧ ТВ </span>
+      <span> ЧЕМПИОНАТ ИСПАНИИ ПО ФУТБОЛУ </span>
+      <span id='registration'>Регистрация</span>
+    </div>
+  </header>
 
 
-  <h4> Примеры спецсимволов:</h4>
+  <nav id='nav'>
+    <a href='./form.html'>Регистрация </a>
+    <a href='#'>Новости </a>
+    <a href='#'>Наука </a>
+    <a href='#'>Знакомства </a>
+    <a href='#'>Аудио </a>
+    <a href='#'>Почта </a>
+  </nav>
 
-  <span> &#9730 </span>
-  <span> &#9786 </span>
-  <span> &#9872</span>
-  <span> &#9993</span>
-  <span> &#10131 </span>
-  <span>&#8258 </span>
+  <main>
+    <section class='lastNews'>
+      <div class = 'news'> 
+      <h2> В УЕФА сделали заявление по поводу резонансного гола Мбаппе в финале Лиги наций</h2>
+      <article class='lastNews_firstBlock'>
+        <p>
+          Глава судейского корпуса УЕФА Роберто Розетти выступил с заявлением по поводу резонансного гола Килиана Мбаппе
+          в финале Лиги наций Испания
+          – Франция (1:2). Напомним, на 81-й минуте французский форвард забил победный гол в ворота сборной Испании,
+          находясь в офсайде.
+          Судья посчитал, что взятие ворот соответствовало всем правилам, так как испанский защитник коснулся мяча, и,
+          получается,
+          Мбаппе получил снаряд не от партнёра по команде, а от соперника.
+        </p>
+        <p>
+          «Энтони Тейлор принял правильное решение, основываясь на существующем своде правил и его официальной
+          интерпретации.
+          Игрок намеренно вмешался, чтобы сыграть в мяч, и соперник не вмешивался в игру.
+        <p>
+          Однако этот случай показывает нам, что нынешнее толкование регламента, похоже, противоречит духу самого
+          регламента, который не позволяет
+          любому игроку воспользоваться своим положением вне игры. Позиция УЕФА заключается в том, что есть способы
+          модернизировать трактовку подобных
+          эпизодов, чтобы привести её в соответствие с целями регламента о положении вне игры и духом футбола. Я уже
+          общался со своими коллегами из
+          ФИФА и IFAB и буду обсуждать решения на предстоящем заседании Технической консультативной группы IFAB», —
+          сказал главный судья УЕФА
+          Роберто Розетти.
 
-  <br />
-  <h4> Примеры знаков пунтуации, стрелок, знаков зодиака и тд:</h4>
+        <address>Автор статьи: alexFromMoscow@yandex.ru <time>2012-12-12 </time> </address>
 
-  <span> &copy; </span>
-  <span> &lt; </span>
-  <span> &#10163;</span>
-  <span> &#8635;</span>
-  <span> &euro; </span>
-  <span> &#9807;</span>
+        </p>
+      </div>
+        <aside class="important">
+          <h4>ВАЖНО:</h4>
+          <ul>
+            <li>Россиянам раскрыли способ определить пальмовое масло в сыре</li>
+            <li>Россиянин Медведев сыграет со Зверевым в финале итогового турнира ATP</li>
+            <li>Хирург развеял опасения об изменении формы носа и ушей из-за медицинской маски</li>
+            <li>Ученые выявили категорию людей с особым иммунитетом к COVID-19</li>
+            <li>Российский космонавт рассказал о вере в бога и инопланетян</li>
+          </ul>
+        </aside>
 
-  <br />
-  <br />
-  <br />
-  <h4> Пример статьи c установленным свойством text-transform: capitalize и другими экспериментальными свойствами</h4>
-  <div class='news'>
-    ТАСС, 16 ноября. Молекулярные биологи выделили тысячи ранее неизвестных форм белков, связанных с работой нейронов и
-    других клеток мозга человека. Теперь науке известно на 30% больше подобных белков. Результаты исследования
-    опубликовал научный журнал Cell Reports.
-    В генах могут находиться "инструкции" по синтезу не одной, а сразу нескольких белковых молекул. Это возможно
-    благодаря тому, что ядро клетки может особым образом менять структуру молекулы РНК, которая представляет собой копию
-    того или иного гена, вырезая из нее различные "ненужные" части.
+        </div>
 
-    Этот процесс, который ученые называют альтернативным сплайсингом, радикально меняет то, как и где будет работать
-    молекула белка, производством которой управляет один и тот же участок ДНК. Подобное перепрофилирование играет
-    критическую роль в жизнедеятельности многих тканей тела, в том числе и мозга. Нарушения в его работе приводят к
-    самым тяжелым последствиям для индивида.
+        <div class='notImportant'>
+          <h3>Существуют тэги для правки html элемента: ins и del</h3>
+          <ins datetime="2005-03-16 00:00Z">
+            <p>Я люблю фрукты.</p>
+          </ins>
+          <ins datetime="2005-03-16 00:00Z">
+            Яблоки <em>вкусные</em>.
+          </ins>
+          <ins datetime="2007-12-19 00:00Z">
+            Как и груши.
+          </ins>
+          <br />
+          <br />
+          <h5>Список дел</h5>
+          <ul>
+            <li>Разгрузить посудомоечную машину</li>
+            <li><del datetime="2009-10-11T01:25-07:00">Посмотреть лекции Уолтера Левина</del></li>
+            <li><del datetime="2009-10-10T23:38-07:00">Скачать больше треков</del></li>
+            <li>Купить принтер</li>
+          </ul>
+        </div>
 
-    Лян Цзыкай из Эксетерского университета (Великобритания) и ее коллеги выяснили, что роль альтернативного сплайсинга
-    в работе и развитии мозга человека ранее сильно недооценивали. К такому выводу ученые пришли благодаря масштабному
-    проекту, цель которого – изучить работу всех генов, задействованных в работе нейронов людей и мышей.
-  </div>
+        <section>
+          <div id='gradientTest'>
+            <h3>Тестируем градиент</h3>
+          </div>
 
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+          <div id='gradientTest2'>
+            <h3>Тестируем радиальный градиент</h3>
+          </div>
 
-  <div class="news2">
-    "Особенно интересным для нас стало то, что за выработку множества ранее неизвестных вариаций белков отвечают
-    несколько генов, связанных с развитием болезни Альцгеймера, аутизма и шизофрении. Мы изучаем, какую роль эти цепочки
-    аминокислот играют в развитии этих болезней", – подытожил один из авторов исследования, профессор Эксетерского
-    университета Джонатан Милл.
-  </div>
-  <span style='color:red'>Сравнение по сжатости</span>
-  <div class="news3">
-    "Особенно интересным для нас стало то, что за выработку множества ранее неизвестных вариаций белков отвечают
-    несколько генов, связанных с развитием болезни Альцгеймера, аутизма и шизофрении. Мы изучаем, какую роль эти цепочки
-    аминокислот играют в развитии этих болезней", – подытожил один из авторов исследования, профессор Эксетерского
-    университета Джонатан Милл.
-  </div>
+          <div id='ballMain'> 
+            <h3>Анимируем мяч</h3>
+            <div id='ball'>
+            </div>
+          </div>
+        </section>
 
-  <div class="smoke">
-    Наилучшим решением для курящих людей станет полный отказ от курения, подчеркивают в PMI. Это единственный способ
-    полностью исключить связанные с курением риски. Но, по оценкам экспертов, девять из десяти курильщиков не
-    отказываются от вредной привычки. В итоге борьба с курением, которую многие страны начали несколько десятилетий
-    назад, не приносит значительного эффекта.
+  </main>
 
-    Учитывая это, еще в 1997 году Координационный центр ООН по табаку и здоровью выпустил рекомендации, которые были
-    призваны помочь взрослым курильщикам, которые не бросают. Для таких курильщиков он призвал снижать токсичность
-    табачных изделий.
 
-    «В ответ на вызовы нового времени PMI приступила к разработке нового класса продуктов, — вспоминают в компании. — И
-    уже более 20 лет мы занимаемся разработкой и научной оценкой альтернативных продуктов с пониженным риском».
+  <footer>
+    <h3>FOOTER</h3>
+    <a type='tel:8906564343' href='#'>Номер для связи: 8-999-989-56-98</a>
+    </section>
 
-  </div>
 
-  <div>
-    <p> Просто текст Просто текст Просто текст Просто текст Просто текст Просто текст Просто текст Просто текст Просто
-      текст</p>
-    <textarea id="x" cols="30" rows="10"></textarea>
-  </div>
+
 </body>
 
 
