@@ -1,163 +1,266 @@
-* {
-  box-sizing:border-box;
-}
-
-#nav {
+.firstBlock {
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
-  background-color: burlywood;
-  height:50px;
-  width: 100vw;
 }
 
-main {
-  width:100vw;
-  border: 2px solid green;
+.firstBlock :nth-child(1n) {
+  width:150px;
+  height: 150px;
+  background-color: red;
 }
+    
 
-#nav a {
-  text-decoration: none;
-  color: blue;
-}
-
-header div span{
-  color: wheat;
- margin-left: 30px;
-}
-
-header {
+.secondtBlock{
   display: flex;
-  align-items:center;
-  width:100vw;
-  background-color: rgb(18, 48, 87);
-  height:120px;
+  justify-content: space-between;
 }
 
-header div img{
-  width:90px;
-  height:70px;
-  margin: 10px;
+.secondtBlock :nth-child(1n) {
+  width:150px;
+  height: 150px;
+  background-color: blue;
 }
 
-#registration {
-  position: absolute;
-  right: 1%;
-}
-
-.news {
-  padding:10px;
-}
-
-.lastNews {
-  /* padding: 10px; */
-  background-color: rgb(236, 241, 247)
-}
-
-h2 {
-  margin-top: 0px;
-}
-
-.important {
-  margin-left: 0px;
-  width:100%;
-  padding:15px;
-  background-color: rgb(247, 227, 231);
-  border: 4px solid red;
-  z-index: 2;
-}
-
-footer {
-  padding: 20px;
-  justify-content: right;
+.thirdBlock{
   display: flex;
-  align-items:center;
-  height: 100px;
-
-  background-color: rgb(153, 175, 196);
+  justify-content: space-around;
 }
 
-footer a{
-  text-decoration: none;
-  color: black
-}
-
-footer h3{
-  position: absolute;
-  left:5%;
-}
-
-address {
-  margin-left: 20px;
-}
-
-.notImportant {
-  text-shadow: 2px 2px 4px pink; 
-  background-color: slategray;
-  color: black;
-  padding:15px;
+.thirdBlock :nth-child(1n) {
+  width:150px;
+  height: 150px;
+  background-color: green;
 }
 
 
-#gradientTest {
-  text-shadow: 2px 2px 2px white,4px 4px 4px black,6px 6px 6px white, 8px 8px 8px black, 10px 10px 10px white, 12px 12px 12px black;
+.Block4{
   display: flex;
-  justify-content: center;
-  align-items:center;
-  text-transform: uppercase;
-  height: 200px;
-  width: 100vw;
-  background: linear-gradient(to right, #bdbcb8, #b8770f);
-  }
+  justify-content: space-around;
+  align-items:center
+}
 
+.Block4 :nth-child(1n) {
+  width:150px;
+  height: 50px;
+  background-color: yellow;
+}
 
-  #gradientTest2 {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    text-transform: uppercase;
-    height: 200px;
-    width: 100vw;
-    background: radial-gradient(at top, red, blue);
+.Block4 :nth-child(2){
+  height:200px
+}
+
+.Block5{
+  display: flex;
+  justify-content: space-around;
+  align-items:flex-end;
+  color:whitesmoke
+}
+
+.Block5 :nth-child(1n) {
+  width:150px;
+  height: 50px;
+  background-color: black;
+}
+
+.Block5 :nth-child(2){
+  height:200px
+}
+
+.Block5 :nth-child(5){
+  align-self:start;
+}
+
+.Block6{
+  display: flex;
+  justify-content: space-around;
+flex-flow:row wrap;
+}
+
+.Block6 :nth-child(1n) {
+  width:300px;
+  height: 50px;
+  background-color: palegreen;
+  align-content:space-between;
+margin:10px
+
+}
+
+*{margin:0;box-sizing: border-box; padding:10px}
+section {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+p {
+  padding: 20px 0;
+}
+.container {
+  perspective: 500px;
+  margin: 0 40px;
+  background: rgba(195,209,212, .7); 
+  transform-style: flat;
+}
+.style-3d {
+  transform-style: preserve-3d;
+}
+.flip {
+  height: 160px;
+  transform: rotateX(45deg);
+  border-radius: 5px;
+  background: rgba(169,90,145, .8);
+  animation: rotate 5s infinite;
+}
+@keyframes rotate {
+  50% {
+    transform: none;
     }
-
-@keyframes moveCircle{
-
-      0%{
-        margin-left:20px;
-        background: radial-gradient(circle at 25% 15%, green, yellow)
-      }
-
-      50%{
-        height: 50px;
-        width: 50px;
-        background: radial-gradient(circle at 25% 15%, red, rgb(55, 0, 255))
-      } 
-    
-      100%{
-        margin-left: 1100px;
-    } 
-  }
-
-  #ball {
-    text-transform: uppercase;
-    height: 200px;
-    width: 200px;
-    border-radius:50%;
-    background: radial-gradient(circle at 25% 15%, green, yellow); 
-    animation-name: moveCircle;
-    animation-duration: 5s;
-    animation-iteration-count: 6;
-    animation-delay: 2s;
-    animation-direction: alternate;
-  }
-
-  #ball:hover {
-   animation-play-state: paused;
-  }
-    
-#ballMain {
- height: 300px;
- text-align: center;
- padding: 20px;
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap:10px;
+}
+
+.wrapper :nth-child(1n){
+  height: 100px;
+border: 2px solid green;
+  background-color: palevioletred;
+}
+
+.generalDiv{
+  height: 500px;
+  background-color: yellow;
+  position: relative;
+  transition: 1s;
+}
+
+@media (min-width:960px) and (max-width:1720px){
+  .generalDiv{
+      height: 900px;
+      background-color: yellow;
+      position: relative;
+      transition: 1s;
+  }
+}
+
+@media (min-width:0px) and (max-width:959px){
+  .generalDiv{
+      height: 1800px;
+      background-color: yellow;
+      position: relative;
+      transition: 1s;
+  }
+}
+
+.generalDiv .inline1{
+  position: absolute;
+  display: inline-block;
+  left: 200px;
+  top:100px;
+  width: 300px;
+  height: 300px;
+  background-color: yellowgreen;
+  transition: 1s;
+}
+
+.generalDiv .inline2{
+  position: absolute;
+  display: inline-block;
+  left: 600px;
+  top:100px;
+  width: 300px;
+  height: 300px;
+  background-color: pink;
+  transition: 1s;
+}
+
+.generalDiv .inline3{
+  position: absolute;
+  display: inline-block;
+  left: 1000px;
+  top:100px;
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  transition: 1s;
+}
+
+.generalDiv .inline4{
+  position: absolute;
+  display: inline-block;
+  left: 1400px;
+  top:100px;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  transition: 1s;
+}
+
+@media (min-width:960px) and (max-width:1720px){
+  .generalDiv .inline3{
+      position: absolute;
+      display: inline-block;
+      left: 200px;
+      top:500px;
+      width: 300px;
+      height: 300px;
+      background-color: blue;
+      transition: 1s;
+
+  }
+  .generalDiv .inline4{
+      position: absolute;
+      display: inline-block;
+      left: 600px;
+      top:500px;
+      width: 300px;
+      height: 300px;
+      background-color: red;
+      transition: 1s;
+  }
+}
+
+@media (min-width:0px) and (max-width:959px){
+  .generalDiv .inline1{
+      position: absolute;
+      display: inline-block;
+      left: 200px;
+      top:100px;
+      width: 300px;
+      height: 300px;
+      background-color: yellowgreen;
+      transition: 1s;
+  }
+  .generalDiv .inline2{
+      position: absolute;
+      display: inline-block;
+      left: 200px;
+      top:500px;
+      width: 300px;
+      height: 300px;
+      background-color: pink;
+      transition: 1s;
+  }
+  .generalDiv .inline3{
+      position: absolute;
+      display: inline-block;
+      left: 200px;
+      top:900px;
+      width: 300px;
+      height: 300px;
+      background-color: blue;
+      transition: 1s;
+  }
+  .generalDiv .inline4{
+      position: absolute;
+      display: inline-block;
+      left: 200px;
+      top:1300px;
+      width: 300px;
+      height: 300px;
+      background-color: red;
+      transition: 1s;
+  }
+}
+
