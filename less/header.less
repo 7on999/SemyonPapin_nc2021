@@ -1,0 +1,62 @@
+//main: ../style.less
+
+.header {
+  height:50px;
+  display: flex;
+  justify-content: space-between;
+
+  &__city{
+    font-weight: 700;
+    margin-left:20px;
+    font-family: 'Roboto', sans-serif;
+
+    &:hover {
+      color: brown;
+      cursor:pointer;
+    }
+
+    &-and-date {
+      display: flex;
+      color:#90919d;
+      align-items:center;
+    }
+
+    &-arrow{
+      opacity: 0.4;
+      transform: rotate(45deg);
+      width:17px;
+    }
+  }
+
+  &__day {
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+
+  &__time:hover{
+    cursor: pointer;
+    color:brown;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    margin:20px;
+
+    &_item:hover {
+      cursor: pointer;
+      opacity: 0.6 !important;
+    }
+
+    img:nth-child(1n) {
+      width:30px;
+       margin:20px;
+      opacity: 0.24;
+
+    img:nth-child(2) {
+        margin-left:8px;
+      }
+    }
+  }
+}

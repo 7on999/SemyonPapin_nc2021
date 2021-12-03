@@ -1,0 +1,29 @@
+//main: ../style.less
+
+.middle-block {
+  margin-top: 25px;
+  height:100px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+
+  &__left {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    &-logo {
+      width:160px;
+      height: 50px;
+      margin-right: 10px;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+ &__rigth {
+    background-color:yellow;
+  }
+
+}

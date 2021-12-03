@@ -1,0 +1,157 @@
+//main: ../style.less
+
+.weather-and-trafic{
+
+  &__trafic{
+
+    &-item {
+      display: flex;
+      align-items:center;
+
+      &:hover {
+        color:brown;
+        cursor: pointer;
+      }
+    }
+
+    &-content-number{
+      color:brown;
+    }
+
+    &-content {
+      display: flex;
+      align-items: center;
+      margin-top: 6px;
+
+  
+
+      &-label {
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+
+        &:hover{
+          color:brown;
+          cursor: pointer;
+        }
+      }
+
+      &-img {
+        width: 53px;
+        height:48px;
+        background-size:cover;
+      }
+
+      &-number{
+        font-size: 35px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__item-title{
+    color: #0054b9;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 8px;
+    font-family: 'Roboto', sans-serif;
+
+    &:hover {
+      color:brown;
+      cursor: pointer;
+    }
+
+    &__main {
+      font-size: 22px;
+      color:#0054b9;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+
+      &:hover{
+        color:brown;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__weather-content{
+    margin-top: 10px;
+    display: flex;
+    align-items:center;
+
+    &-item{
+      display: flex;
+      align-items: center;
+
+      &:hover  {
+        cursor: pointer;
+
+      
+       }
+    }
+  }
+
+  &__cloud {
+    background-size: cover;
+    width:48px;
+    height:48px;
+  }
+
+  &__temp {
+    font-size: 40px;
+    margin-left: 8px;
+  }
+
+  &__trafic {
+    margin-top: 20px;
+  }
+
+  &__forecast {
+    display: flex;
+    margin-left: 8px;
+
+    &-item {
+      margin-left: 10px;
+      display: flex; 
+      justify-content: center;
+      flex-direction: column;
+      font-size: 13px;
+      font-family: 'Roboto', sans-serif;
+      color:#90919d;
+      font-weight: 300;
+
+      &-temp {
+        color:black;
+        font-size: 16px;
+      }
+
+      &:hover {
+        cursor:pointer;
+    }
+
+    &-img {
+      width:30px;
+      height:30px;
+      vertical-align: middle;
+      margin-right: 2px;
+    }
+  }
+}
+
+&__weather-and-trafic-img{
+  vertical-align: sub;
+  opacity: 0;
+}
+
+&_trafic-img:hover,
+&_weathec-img:hover{
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+}
+
+    

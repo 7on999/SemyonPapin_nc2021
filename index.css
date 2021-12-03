@@ -4,7 +4,6 @@
   grid-template-columns: 6fr 1fr;
 }
 
-
  .header {
   height:50px;
   display: flex;
@@ -83,7 +82,6 @@ font-family: 'Roboto', sans-serif;
 .main-block__news-titles span:nth-child(1){
   color:#0054b9;
   font-size: 22px;
-
 }
 
 .main-block__news-titles span:nth-child(2){
@@ -108,20 +106,20 @@ font-family: 'Roboto', sans-serif;
   color: brown;
 }
 
-li {
+.main-block__news li {  /* отсюда начать  */
   list-style-type: none;
   color:black;
   text-decoration:none;
   margin-bottom:8px;
 }
 
-li a {
+.main-block__news li a {
   text-decoration: none;
   color:black;
   font-size: 20px;
 }
 
-ul {
+.main-block__news ul {
   margin-left: 0; /* Отступ слева в браузере IE и Opera */
   padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
  }
@@ -132,7 +130,6 @@ ul {
   display: inline-block;
   background-size: cover;
   margin-right: 4px;
-
  }
 
  .main-block__news li:hover a{
@@ -193,7 +190,6 @@ ul {
   cursor: pointer;
   color:brown;
 }
-
 
 .main-block__oil-item_seventh {
   text-transform: uppercase;
@@ -334,23 +330,27 @@ ul {
   font-size: 16px;
 }
 
+/* следующие 4 строчки не робят */
 .weather-and-trafic__weather-content-item:hover .weather-and-trafic__temp,
 .weather-and-trafic__forecast-item_third:hover .weather-and-trafic__forecast-item-temp_third,
 .weather-and-trafic__forecast-item_second:hover .weather-and-trafic__forecast-item-temp_second,
 .weather-and-trafic__forecast-item_first:hover .weather-and-trafic__forecast-item-temp_first{
   color:brown;
 }
+/* ................. */
 
 .weather-and-trafic__weather-and-trafic-img{
   vertical-align: sub;
   opacity: 0;
 }
 
+/* следующие 3 строчки не робят */
 .main-block__top-content:hover .main-block__top-img,
 .weather-and-trafic__trafic:hover .weather-and-trafic_trafic-img,
 .weather-and-trafic__weather:hover .weather-and-trafic_weather-img{
   opacity: 0.3;
 }
+/* ................. */
 
 .main-block__top-img:hover,
 .weather-and-trafic_trafic-img:hover,
@@ -412,6 +412,7 @@ justify-content: space-between;
   cursor: pointer;
 }
 
+
 .aside__aside-mail-label:hover,
 .aside__aside-mail-number:hover,
 .aside__aside-mail-login:hover,
@@ -438,6 +439,7 @@ font-weight: 400;
   font-size: 16px;
   font-weight: 300;
 }
+
 
 .list-icon{
   margin-top:30px;
@@ -483,6 +485,7 @@ font-weight: 400;
   justify-content: end;
   align-items: center;
 }
+
 .middle-block__left-logo {
   width:160px;
   height: 50px;
