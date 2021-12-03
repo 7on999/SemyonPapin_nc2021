@@ -330,7 +330,7 @@ font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-/* следующие 4 строчки не робят */
+/* следующие 4 строчки не сделал в less*/
 .weather-and-trafic__weather-content-item:hover .weather-and-trafic__temp,
 .weather-and-trafic__forecast-item_third:hover .weather-and-trafic__forecast-item-temp_third,
 .weather-and-trafic__forecast-item_second:hover .weather-and-trafic__forecast-item-temp_second,
@@ -344,13 +344,12 @@ font-family: 'Roboto', sans-serif;
   opacity: 0;
 }
 
-/* следующие 3 строчки не робят */
 .main-block__top-content:hover .main-block__top-img,
 .weather-and-trafic__trafic:hover .weather-and-trafic_trafic-img,
 .weather-and-trafic__weather:hover .weather-and-trafic_weather-img{
   opacity: 0.3;
 }
-/* ................. */
+
 
 .main-block__top-img:hover,
 .weather-and-trafic_trafic-img:hover,

@@ -1,8 +1,14 @@
-//main: ../style.less
+
 
 .weather-and-trafic{
 
   &__trafic{
+
+    &:hover{
+      .weather-and-trafic_trafic-img{
+        opacity: 0.3;
+      }
+    }
 
     &-item {
       display: flex;
@@ -11,6 +17,7 @@
       &:hover {
         color:brown;
         cursor: pointer;
+        
       }
     }
 
@@ -73,6 +80,14 @@
       &:hover{
         color:brown;
         cursor: pointer;
+      }
+    }
+  }
+
+  &__weather {
+    &:hover{
+      .weather-and-trafic_weather-img{
+        opacity: 0.3;
       }
     }
   }
