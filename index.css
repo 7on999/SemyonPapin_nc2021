@@ -334,15 +334,12 @@
   font-size: 16px;
 }
 
-/* следующие 4 строчки не сделал в less*/
 .weather-and-trafic__weather-content-item:hover .weather-and-trafic__temp,
 .weather-and-trafic__forecast-item_third:hover .weather-and-trafic__forecast-item-temp_third,
 .weather-and-trafic__forecast-item_second:hover .weather-and-trafic__forecast-item-temp_second,
 .weather-and-trafic__forecast-item_first:hover .weather-and-trafic__forecast-item-temp_first {
   color: brown;
 }
-
-/* ................. */
 
 .weather-and-trafic__weather-and-trafic-img {
   vertical-align: sub;

@@ -100,7 +100,11 @@
       align-items: center;
 
       &:hover  {
-        cursor: pointer;      
+        cursor: pointer;  
+        
+        .weather-and-trafic__temp{
+          color: brown;
+        }
        }
     }
   }
@@ -133,6 +137,30 @@
       font-family: 'Roboto', sans-serif;
       color:#90919d;
       font-weight: 300;
+
+      &_third {
+        &:hover{
+          .weather-and-trafic__forecast-item-temp_third{
+            color: brown;
+          }
+        }
+      }
+
+      &_second {
+        &:hover{
+          .weather-and-trafic__forecast-item-temp_second{
+            color: brown;
+          }
+        }
+      }
+
+      &_first {
+        &:hover{
+          .weather-and-trafic__forecast-item-temp_first{
+            color: brown;
+          }
+        }
+      }
 
       &-temp {
         color:black;
