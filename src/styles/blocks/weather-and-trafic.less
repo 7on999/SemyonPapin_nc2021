@@ -34,8 +34,8 @@
 
       &-label {
         font-size: 13px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
 
         &:hover {
           color: @hoverColor;
@@ -137,6 +137,13 @@
       align-items: center;
     }
 
+    &-img { 
+      width: 30px; 
+      height: 22px;
+      vertical-align: middle;
+      margin-right: 2px;
+    } 
+
     &-item {
       margin-left: 10px;
       display: flex;
@@ -147,6 +154,8 @@
       color: #90919d;
       font-weight: 300;
       cursor: pointer;
+
+    
 
       div {
         display: flex;
@@ -177,8 +186,9 @@
         }
       }
 
+      // margin-left: -5px; ПОД ВОПРОСОМ МБ 1px
       &-temp {
-        margin-left: 1px !important;
+        margin-left: -5px;
         color: black;
         font-size: 16px;
       }
@@ -191,11 +201,7 @@
         }
       }
 
-      &-img {
-        height: 22px;
-        vertical-align: middle;
-        margin-right: 2px;
-      }
+    
     }
   }
 
