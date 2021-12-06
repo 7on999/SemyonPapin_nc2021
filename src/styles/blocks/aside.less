@@ -1,0 +1,105 @@
+@import '../common/vars.less';
+.aside{
+
+ &__aside-yandex-pluz,
+ &__aside-mail {
+  box-shadow: 0 0 32px rgb(0 0 0 / 8%);
+  margin: 1px 1px 0 0;
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: white;
+  border-radius: 12px;
+ }
+
+ &__aside-mail {
+  &-profile {
+    display: flex;
+  justify-content: space-between;
+  }
+
+  &-login:hover{
+    cursor: pointer;
+    color: @hoverColor;
+  }
+
+  &-number,
+  &-login {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    &:hover{
+      cursor: pointer;
+      color:@hoverColor;
+    }
+  }
+
+  &-number:hover{
+    cursor: pointer;
+    color:@hoverColor;
+  }
+
+  &-img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  &-label {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    margin-right: 5px;
+
+    &:hover{
+      cursor: pointer;
+      color:@hoverColor;
+    }
+  }
+
+  &-disc {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 10px;
+
+    &:hover{
+      cursor: pointer;
+      color:@hoverColor;
+    }
+  }
+ }
+ 
+ &__aside-yandex-pluz{
+  margin-top: 10px;
+  transition:0.3s;
+
+  &:hover{
+    transform: translateX(-30px);
+    cursor: pointer;
+
+    .aside__aside-yandex-pluz-letter {
+      font-weight: 400;
+    }
+  }
+
+  &-img {
+    width: 30px;
+    height: 25px;
+    vertical-align: sub;
+  }
+
+  &-letter{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 13px;
+    font-weight: 300;
+  }
+ }
+
+
+
+}

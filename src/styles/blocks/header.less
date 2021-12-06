@@ -1,0 +1,68 @@
+@import '../common/vars.less';
+
+.header {
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+
+  &__city{
+    font-weight: 700;
+  margin-left: 18px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 4px;
+
+    &:hover {
+      color: @hoverColor;
+      cursor:pointer;
+    }
+
+    &-and-date {
+      display: flex;
+      color:#90919d;
+      align-items:center;
+    }
+
+    &-arrow{
+      opacity: 0.4;
+      transform: rotate(45deg);
+      width: 12px;
+    }
+
+    &-title{
+      font-size: 12px;
+    }
+  }
+
+  &__day {
+    margin-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  &__time:hover{
+    cursor: pointer;
+    color:@hoverColor;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    margin: 14px;
+
+    &_item:hover {
+      cursor: pointer;
+      opacity: 0.6 !important;
+    }
+
+    img:nth-child(1n) {
+      width: 21px;
+      margin: 14px;
+      opacity: 0.24;
+    }
+
+    img:nth-child(2) {
+        margin-left:6px;
+    }
+  }
+}

@@ -1,0 +1,220 @@
+@import '../common/vars.less';
+
+.main-block {
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+    &-img:hover {
+      opacity: 1 !important;
+      cursor: pointer;
+    }
+
+    &-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+
+    }
+  }
+
+  &__news {
+
+    &:hover {
+      .main-block__top-img {
+        opacity: 0.3;
+      }
+    }
+
+    ul {
+      margin-left: 0;
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+
+
+    li {
+      list-style-type: none;
+      text-decoration: none;
+      margin-bottom: 8px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:hover a {
+        color: @hoverColor;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+      }
+    }
+
+
+
+    &-titles {
+      cursor: pointer;
+      font-family: 'Roboto', sans-serif;
+
+      span:nth-child(1) {
+        color: #0054b9;
+        font-size: 15px;
+      }
+
+      span:nth-child(2) {
+        color: #6da2e1;
+        font-size: 15px;
+        margin: 7px;
+      }
+
+      span:nth-child(3) {
+        color: #6da2e1;
+        font-size: 15px;
+        margin: 6px;
+      }
+
+      span:nth-child(4) {
+        color: #f5b46f;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      span:nth-child(1n):hover {
+        color: @hoverColor;
+      }
+
+    }
+
+    &-picture {
+      width: 11px;
+      height: 11px;
+      display: inline-block;
+      background-size: cover;
+      margin-right: 3px;
+
+      &_first {
+        background-image: url('https://avatars.mds.yandex.net/get-ynews-logo/26056/1047-1478692902215-square/logo-square');
+      }
+
+      &_second {
+        background-image: url('https://avatars.mds.yandex.net/get-ynews-logo/135513/1002-1544074003449-square/logo-square');
+      }
+
+      &_third {
+        background-image: url('https://avatars.mds.yandex.net/get-ynews-logo/135513/1014-1627575534690-square/logo-square')
+      }
+
+
+      &_fourth {
+        background-image: url('https://avatars.mds.yandex.net/get-ynews-logo/26056/1071-1582024400668-square/logo-square')
+      }
+
+      &_fifth {
+        background-image: url('https://avatars.mds.yandex.net/get-ynews-logo/50744/1551-1563808847385-square/logo-square')
+      }
+
+     
+  
+    }
+  }
+
+  &__oil {
+    font-size: 8px;
+
+    span:nth-child(1n) {
+      font-size: 12px;
+      margin: 2px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+    }
+
+    &-item_first,
+    &-item_fourth {
+      font-weight: 400 !important;
+      cursor: pointer;
+    }
+
+    &-item_third,
+    &-item_sixth,
+    &-item_ninth {
+      color: #999;
+    }
+
+    &-item_first:hover,
+    &-item_fourth:hover,
+    &-item_seventh:hover {
+      cursor: pointer;
+      color: @hoverColor;
+    }
+
+    &-item_seventh {
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500 !important;
+    }
+
+    &-dots {
+      width: 15px;
+      height: 15px;
+      background-size: cover;
+      margin-left: 4px;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+    }
+
+    &-dots {
+      width: 15px;
+      height: 15px;
+      background-size: cover;
+      margin-left: 4px;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+    }
+
+    span:nth-child(1n) {
+      margin: 2px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+    }
+
+    &-item {
+
+      &_first,
+      &_fourth {
+        font-weight: 400 !important;
+      }
+
+      &_third,
+      &_sixth,
+      &_ninth {
+        color: #999;
+      }
+
+      &_seventh {
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500 !important;
+      }
+
+      &_first:hover,
+      &_fourth:hover,
+      &_seventh:hover {
+        color: @hoverColor;
+      }
+    }
+  }
+
+}
