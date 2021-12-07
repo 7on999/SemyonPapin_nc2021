@@ -2,15 +2,17 @@
 
 .main-block {
 
-  &content{
-    @media (max-width: 900px) {
-      grid-template-columns: 0fr 5fr;
-}
-  }
+
+   
+  
 
   &__top {
     display: grid;
     grid-template-columns: 1fr 5fr;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 0fr 1fr;
+}
 
     &-img:hover {
       opacity: 1 !important;
