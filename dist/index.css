@@ -53,14 +53,14 @@
 .header__icons img:nth-child(2) {
   margin-left: 6px;
 }
-@media (max-width: 900px) {
-  .main-block__top {
-    grid-template-columns: 0fr 5fr;
-  }
-}
 .main-block__top {
   display: grid;
   grid-template-columns: 1fr 5fr;
+}
+@media (max-width: 900px) {
+  .main-block__top {
+    grid-template-columns: 0fr 1fr;
+  }
 }
 .main-block__top-img:hover {
   opacity: 1 !important;
@@ -94,7 +94,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .main-block__news li a {
     font-size: 8px;
   }
@@ -344,7 +344,7 @@
   height: 40px;
   transition: ease-out 0.15s;
 }
-@media (max-width: 900px) {
+@media (max-width: 500px) {
   .list-icon__item-img {
     width: 25px;
     height: 25px;
