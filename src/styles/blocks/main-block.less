@@ -2,6 +2,12 @@
 
 .main-block {
 
+  &content{
+    @media (max-width: 900px) {
+      grid-template-columns: 0fr 5fr;
+}
+  }
+
   &__top {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -14,7 +20,6 @@
     &-content {
       display: grid;
       grid-template-columns: 2fr 1fr;
-
     }
   }
 /////////////////////////////////////////////////////////
@@ -50,6 +55,10 @@
         font-size: 13px;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
+
+        @media (max-width: 900px) {
+          font-size: 8px;
+    }
       }
     }
 
@@ -94,6 +103,8 @@
       display: inline-block;
       background-size: cover;
       margin-right: 3px;
+
+  
 
       &_first {
         background-image: url('https://avatars.mds.yandex.net/get-ynews-logo/26056/1047-1478692902215-square/logo-square');

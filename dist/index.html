@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" lang="ru" content="фронтенд, вэб, верстка, язык гипертекстовой разметки, стили">
+  <meta name="keywords" lang="en" content="web, frontend development, html, css">
+  <title>Яндекс</title>
+  <link rel='stylesheet' href='./index.css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="./icons/mini-logo.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src='./index.js'> </script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="left-block">
+      <header class='header'>
+
+        <div class="header__city-and-date">
+
+          <div class="header__city">
+            <img class='header__city-arrow' src='./icons/navigation.png'>
+            <span class='header__city-title'> Москва </span>
+          </div>
+          <div class="header__day">
+            <span> 1 декабря, среда </span>
+            <span class='header__time'> 20:20 </span>
+          </div>
+        </div>
+
+        <div class="header__icons">
+          <img class='header__icons_item' src='./icons/cart.png'>
+          <img class='header__icons_item' src='./icons/bell.png'>
+        </div>
+      </header>
+      <main class='main-block'>
+        <div class="main-block__top">
+          <div class="empty"> </div>
+          <div class="main-block__content">
+            <div class="main-block__top-content">
+              <div class="main-block__news">
+                <div class="main-block__news-titles">
+                  <span> Cейчас в СМИ </span>
+                  <span> В Москве </span>
+                  <span> Интересное </span>
+                  <span> Коронавирус </span>
+                  <img class='weather-and-trafic__weather-and-trafic-img main-block__top-img'
+                    src='./icons/dots-vertical.png' />
+                </div>
+                <div class='main-block__news'>
+                  <ul>
+                    <li>
+                      <div class='main-block__news-picture main-block__news-picture_first'></div>
+                      <a href=#> Путин ударил кулаком по столу во время доклада главы Минтруда о зарплатах шахтеров </a>
+                    </li>
+                    <li>
+                      <div class='main-block__news-picture main-block__news-picture_second'></div>
+                      <a href=#'> Глава МИД России Лавров назвал угрозу Нуланд ввести новые санкции тупиковым путем</a>
+                    </li>
+                    <li>
+                      <div class='main-block__news-picture main-block__news-picture_third'></div>
+                      <a href=#> Белоруссия пообещала ответить на санкции ЕС асимметрично, но адекватно </a>
+                    </li>
+                    <li>
+                      <div class='main-block__news-picture main-block__news-picture_fourth'></div>
+                      <a href='#'>Кулеба: Лукашенко своим заявлением о Крыме сжег мосты в отношениях с Украиной</a>
+                    </li>
+                    <li>
+                      <div class='main-block__news-picture main-block__news-picture_fifth'></div>
+                      <a href='#'>Сергей Велигодский из Сбербанка предупредил о риске остаться без жилья из-за
+                        мошенников </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="main-block__oil">
+                  <span class='main-block__oil-item main-block__oil-item_first'> USD </span>
+                  <span class='main-block__oil-item main-block__oil-item_second'> 73.88 </span>
+                  <span class='main-block__oil-item main-block__oil-item_third'> -0.42 </span>
+                  <span class='main-block__oil-item main-block__oil-item_fourth'> EUR </span>
+                  <span class='main-block__oil-item main-block__oil-item_fifth'> 83.52 </span>
+                  <span class='main-block__oil-item main-block__oil-item_sixth'> -0.48 </span>
+                  <span class='main-block__oil-item main-block__oil-item_seventh'> Нефть </span>
+                  <span class='main-block__oil-item main-block__oil-item_eighth'> 69.23 </span>
+                  <span class='main-block__oil-item main-block__oil-item_ninth'> +0.76% </span>
+                  <img class='main-block__oil-dots' src='./icons/dots-horizontal.png' />
+                </div>
+              </div>
+              <div class="weather-and-trafic">
+                <div class="weather-and-trafic__weather">
+
+                  <div class="weather-and-trafic__item-titles">
+                    <span class="weather-and-trafic__item-title_main">Погода</span>
+                    <span class='weather-and-trafic__item-title'>Карта осадков</span>
+                    <img class='weather-and-trafic__weather-and-trafic-img weather-and-trafic__weather-img'
+                      src='./icons/dots-vertical.png' />
+                  </div>
+
+                  <div class="weather-and-trafic__weather-content">
+
+                    <div class='weather-and-trafic__weather-content-item'>
+                      <img class='weather-and-trafic__cloud' src='./icons/cloud.png' />
+                      <span class='weather-and-trafic__temp'> 0° </span>
+                    </div>
+
+
+                    <div class="weather-and-trafic__forecast">
+
+                      <div class="weather-and-trafic__forecast-item weather-and-trafic__forecast-item_first">
+                        <div><span> Утром </span> </div>
+                        <div class='weather-and-trafic__forecast-morning'>
+                          <img class='weather-and-trafic__forecast-img' src='./icons/cloudWind.png' />
+                          <span
+                            class='weather-and-trafic__forecast-item-temp weather-and-trafic__forecast-item-temp_first'>-3°</span>
+                        </div>
+                      </div>
+
+                      <div class="weather-and-trafic__forecast-item weather-and-trafic__forecast-item_second">
+                        <div><span> Днём </span> </div>
+                        <div class='weather-and-trafic__forecast-evening'>
+                          <img class='weather-and-trafic__forecast-img' src='./icons/cloudWind.png' />
+                          <span
+                            class='weather-and-trafic__forecast-item-temp weather-and-trafic__forecast-item-temp_second'>-1°</span>
+                        </div>
+                      </div>
+
+                      <div class="weather-and-trafic__forecast-item weather-and-trafic__forecast-item_third">
+                        <div> <span> Вечером </span> </div>
+                        <div class='weather-and-trafic__forecast-nigth'>
+                          <img class='weather-and-trafic__forecast-img' src='./icons/cloudWind.png' />
+                          <span
+                            class='weather-and-trafic__forecast-item-temp weather-and-trafic__forecast-item-temp_third'>-2°</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="weather-and-trafic__trafic">
+                  <div class="weather-and-trafic__item-titles">
+                    <span class="weather-and-trafic__item-title_main">Пробки</span>
+                    <span class="weather-and-trafic__item-title">Метро</span>
+                    <span class='weather-and-trafic__item-title'>Расписание</span>
+                    <span class='weather-and-trafic__item-title'>Такси</span>
+                    <img class='weather-and-trafic__weather-and-trafic-img weather-and-trafic__trafic-img'
+                      src='./icons/dots-vertical.png' />
+                  </div>
+                  <div class="weather-and-trafic__trafic-content">
+                    <div class='weather-and-trafic__trafic-item'>
+                      <img class='weather-and-trafic__trafic-content-img' src='./icons/trafic.png' />
+                      <span class='weather-and-trafic__trafic-content-number'> 1 </span>
+                    </div>
+                    <span class='weather-and-trafic__trafic-content-label'> На дорогах свобоно </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="list-icon">
+
+
+              <a href='#' class="list-icon__item">
+                <img class='list-icon__item-img list-icon__item-img_first' src='./icons/list-icons/1.png'>
+                <div class='list-icon__item-label'>
+                  Маркет
+                </div>
+              </a>
+
+
+              <a href='#' class="list-icon__item">
+                <img class='list-icon__item-img list-icon__item-img_second' src='./icons/list-icons/2.png'>
+                <div class='list-icon__item-label'>
+                  Видео
+                </div>
+              </a>
+
+
+
+
+              <a href='#' class="list-icon__item">
+                <img class='list-icon__item-img list-icon__item-img_third' src='./icons/list-icons/3.png'>
+                <div class='list-icon__item-label'>
+                  Картинки
+                </div>
+              </a>
+
+              <a href='#' class="list-icon__item">
+                <img class='list-icon__item-img list-icon__item-img_fourth' src='./icons/list-icons/4.png'>
+                <div class='list-icon__item-label'>
+                  Новости
+                </div>
+              </a>
+
+
+              <a href='#' class="list-icon__item">
+                <img class='list-icon__item-img list-icon__item-img_fifth' src='./icons/list-icons/5.png'>
+                <div class='list-icon__item-label'>
+                  Карты
+                </div>
+              </a>
+
+              <a href='#' class="list-icon__item">
+                <img class='list-icon__item-img list-icon__item-img_sixth' src='./icons/list-icons/6.png'>
+                <div class='list-icon__item-label'>
+                  Переводчик
+                </div>
+              </a>
+
+              <a href='#' class="list-icon__item">
+                <img class='list-icon__item-img list-icon__item-img_seventh' src='./icons/list-icons/7.png'>
+                <div class='list-icon__item-label'>
+                  Музыка
+                </div>
+              </a>
+
+              <a href='#' class="list-icon__item">
+                <img class='list-icon__item-img list-icon__item-img_eighth' src='./icons/list-icons/8.png'>
+                <div class='list-icon__item-label'>
+                  Программа
+                </div>
+              </a>
+
+              <a href='#' class="list-icon__item">
+                <img class='list-icon__item-img list-icon__item-img_ninth' src='./icons/list-icons/9.png'>
+                <div class='list-icon__item-label'>
+                  Авто.ру
+                </div>
+              </a>
+
+              <a href='#' class="list-icon__item">
+                <img class='list-icon__item-img list-icon__item-img_tenth' src='./icons/list-icons/10.png'>
+                <div class='list-icon__item-label'>
+                  еще
+                </div>
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="middle-block">
+          <div class="middle-block__left">
+            <img class='middle-block__left-logo' src='./icons/logo-yandex.png' />
+          </div>
+          <div>
+            <form class="middle-block__rigth">
+
+              <div class="middle-block__search-string">
+                <div class='middle-block__contenteditable-div' contenteditable placeholder="Найдется все"></div>
+                <div class="middle-block__string-icons">
+                  <img class="middle-block__string-icons_micro" src='./icons/microphone.png' />
+                  <img class="middle-block__string-icons_clava" src='./icons/keyboard.png' />
+                </div>
+              </div>
+
+              <div class="middle-block__search-button-wrapper">
+                <div class='middle-block__search-button'>
+                  <button> <span class='middle-block__search-button-label'> Найти </span> </button>
+                </div>
+              </div>
+
+            </form>
+            <div class='middle-block__bot-label'>
+              <img src='./icons/mini-yb.png'>
+              <span>Установите Яндекс.Браузер</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="advertising">
+          <div class="advertising__empty">
+
+          </div>
+          <div class="advertising__content">
+
+            <a
+              href='https://skillbox.ru/code/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=7d69da85&utm_term=d98d03494ac5447102685f7dba585282&advcake_params=d98d03494ac5447102685f7dba585282&sub1=nn'>
+              <div class='advertising__top-advertising'>
+                <div class="advertising__top-advertising-picture">
+                  <div class="advertising__top-advertising-picture-label">
+                    <span>Реклама</span>
+                  </div>
+                </div>
+                <div class="advertising__top-advertising-labels">
+                  <img class="advertising__top-advertising-close-img" src='./icons/close.png' />
+                  <div class="advertising__top-advertising-top-label"> <span> Научим грамотно писать код для WEB!
+                    </span> </div>
+                  <div class="advertising__top-advertising-bot-label"> <span> Подробнее на go.acstat.com </span> </div>
+                </div>
+              </div>
+            </a>
+
+            <div class="adv-and-dzen">
+
+              <div class="adv-and-dzen__adv">
+
+                <div class='adv-and-dzen__adv1'> 
+                <div class="adv-and-dzen__adv-header">
+                  <div class="adv-and-dzen__adv-header-profile">
+
+                    <div class='adv-and-dzen__adv-header-div-img'>
+                      <img class='adv-and-dzen__adv-header-img' src='./icons/ava-video-block.png' />
+                    </div>
+
+                    <div class="adv-and-dzen__adv-header-labels">
+                      <div class="adv-and-dzen__adv-header-labels-top">
+                        <div> <span class='adv-and-dzen__adv-header-labels_first'> Мелодия вкуса </span> </div>
+
+                        <div class="adv-and-dzen__adv-header-labels-top-div-dot">
+                          <img class="adv-and-dzen__adv-header-labels-top-dot" src='./icons/black-circle.png' />
+                        </div>
+
+                        <div> <span class='adv-and-dzen__adv-header-labels_third'> Подписаться </span> </div>
+
+                      </div>
+
+                      <div class="adv-and-dzen__adv-header-labels-bot">
+                        <span>178 тыс. подписчиков </span>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="adv-and-dzen__adv-header-dots">
+                    <img class="adv-and-dzen__adv-header-dots-img" src='./icons/dots-vertical.png' />
+                  </div>
+
+                </div>
+
+                <div class="adv-and-dzen__adv-video">
+                  <video src="./video/S7Airlines.mp4" width='100%' controls></video>
+                </div>
+
+                <div class="adv-and-dzen__label-under-video">
+                  <div class="adv-and-dzen__label-under-video-title"> <span> Жена готовит 3 быстрые закуски из слоёного
+                      теста на праздничный стол всего за 20 минут </span> </div>
+                  <div class="adv-and-dzen__label-under-video-date-and-views">
+                    <span> 12 августа </span>
+                    <img class="adv-and-dzen__label-under-video-img" src='./icons/black-circle.png' />
+                    <span> 17 492 865 просмотров </span>
+                  </div>
+
+                  <div class="adv-and-dzen__follow-block">
+                    <span class="adv-and-dzen__follow-block-title"> Не пропустите новые публикации </span>
+                    <button class="adv-and-dzen__follow-block-btn"> Подписаться </button>
+                  </div>
+
+                  <div class="adv-and-dzen__footer ">
+                    <div class="adv-and-dzen__footer-left">
+                      <img class="adv-and-dzen__footer-left-avatar" src='./icons/double-ava.png' />
+                      <span class="adv-and-dzen__footer-nmb-comments"> 896 </span>
+                      <span> комментариев </span>
+                    </div>
+                    <div class="adv-and-dzen__footer-right">
+                      <div> <img class="adv-and-dzen__footer-left-icon adv-and-dzen__footer-left-icon_1" src='./icons/cool.png' /> </div>
+                      <div>  <img class="adv-and-dzen__footer-left-icon adv-and-dzen__footer-left-icon_2" src='./icons/notCool.png' /></div>
+                      <div> <img class="adv-and-dzen__footer-left-icon adv-and-dzen__footer-left-icon_3" src='./icons/arrow.png' /></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+               <div  class='adv-and-dzen__adv2'>
+
+                <div class="adv-and-dzen__adv2__img">
+               
+                </div>
+
+                <div class="adv-and-dzen__adv2__content">
+
+                  <div class="adv-and-dzen__adv-header"> 
+                    <div class="adv-and-dzen__adv-header-left">
+
+                      <div class='adv-and-dzen__adv-header-div-img'>
+                        <img class='adv-and-dzen__adv-header-img' src='./icons/ava-video-block.png' />
+                      </div>
+
+                      <div class='adv-and-dzen__adv-header-labels'>
+                        <div class="adv-and-dzen__adv-header-labels-top"> 
+                          <span class="adv-and-dzen__adv-header-labels-title"> Cемейный канал Тимошенко </span>
+                          <img class="adv-and-dzen__adv-header-labels-img" src='./icons/prodevedAcc.png'/>
+                        </div>
+
+                        <div class="adv-and-dzen__adv-header-labels-bot"> 
+                          <span> свежее из подписок </span>
+                        </div>
+                      </div>
+                      
+                    </div>
+
+                    <div class="adv-and-dzen__adv-header-dots adv-and-dzen__adv-header-dots__2">
+                      <img class="adv-and-dzen__adv-header-dots-img " src='./icons/dots-vertical.png' />
+                    </div>
+
+                  </div>
+
+                  <div class='adv-and-dzen__adv2-middle-block-label-1'>
+                    <span> Жена готовит этот вкусный салат через день, но я готов есть его каждый день. Делимся рецептом +видео </span>
+                  </div>
+
+                  <div class='adv-and-dzen__adv2-middle-block-label-2'>
+                    <span> Приветствуем всех на "Семейном канале Тищенко" Сегодня хочу с Вами поделится,..</span>
+                  </div>
+
+                  <div class='adv-and-dzen__adv2-middle-block-label-3'>
+                    <span> 2 дня назад</span>
+                  </div>
+
+                  
+                  <div class="adv-and-dzen__footer adv-and-dzen__footer_2">
+                    <div class="adv-and-dzen__footer-left adv-and-dzen__footer-left_2">
+                      <img class="adv-and-dzen__footer-adv2-avatar__2" src='./icons/adv2-comment-ava.png' />
+                      <span class='adv-and-dzen__footer-adv2-label'> Комментировать... </span>
+                    </div>
+                    <div class="adv-and-dzen__footer-right">
+                      <div> <img class="adv-and-dzen__footer-left-icon adv-and-dzen__footer-left-icon_1" src='./icons/cool.png' /> </div>
+                      <div>  <img class="adv-and-dzen__footer-left-icon adv-and-dzen__footer-left-icon_2" src='./icons/notCool.png' /></div>
+                      <div> <img class="adv-and-dzen__footer-left-icon adv-and-dzen__footer-left-icon_3" src='./icons/arrow.png' /></div>
+                    </div>
+                  </div>
+
+                </div>
+
+               </div>
+
+               <div class='adv-and-dzen__adv1 adv-and-dzen__adv1_3'> 
+                <div class="adv-and-dzen__adv-header">
+                  <div class="adv-and-dzen__adv-header-profile">
+
+                    <div class='adv-and-dzen__adv-header-div-img'>
+                      <img class='adv-and-dzen__adv-header-img' src='./icons/adv3-ava.png' />
+                    </div>
+
+                    <div class="adv-and-dzen__adv-header-labels">
+                      <div class="adv-and-dzen__adv-header-labels-top">
+                        <div> <span class='adv-and-dzen__adv-header-labels_first'> Relu Dam </span> </div>
+
+                        <div class="adv-and-dzen__adv-header-labels-top-div-dot">
+                          <img class="adv-and-dzen__adv-header-labels-top-dot" src='./icons/black-circle.png' />
+                        </div>
+
+                        <div> <span class='adv-and-dzen__adv-header-labels_third'> Подписаться </span> </div>
+
+                      </div>
+
+                      <div class="adv-and-dzen__adv-header-labels-bot">
+                        <span>3 тыс. подписчиков </span>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="adv-and-dzen__adv-header-dots">
+                    <img class="adv-and-dzen__adv-header-dots-img" src='./icons/dots-vertical.png' />
+                  </div>
+
+                </div>
+
+                <div class="adv-and-dzen__adv-video">
+                  <video src="./video/v2.mp4" width='100%' controls></video>
+                </div>
+
+                <div class="adv-and-dzen__label-under-video">
+                  <div class="adv-and-dzen__label-under-video-title"> <span> СУПЕРСКАЯ ИДЕЯ для Подачи На Стол. Такую Красоту Только Смотреть. Праздничное Украшение Блюд. </span> </div>
+                  <div class="adv-and-dzen__label-under-video-date-and-views">
+                    <span> 2 дня назад </span>
+                    <img class="adv-and-dzen__label-under-video-img" src='./icons/black-circle.png' />
+                    <span> 417 678 просмотров </span>
+                  </div>
+
+                  <div class="adv-and-dzen__follow-block">
+                    <span class="adv-and-dzen__follow-block-title"> Не пропустите новые публикации </span>
+                    <button class="adv-and-dzen__follow-block-btn"> Подписаться </button>
+                  </div>
+
+                  <div class="adv-and-dzen__footer ">
+                    <div class="adv-and-dzen__footer-left">
+                      <img class="adv-and-dzen__footer-left-avatar adv-and-dzen__footer-left-avatar_3" src='./icons/adv2-double-ava.png' />
+                      <span class="adv-and-dzen__footer-nmb-comments"> 70 </span>
+                      <span> комментариев </span>
+                    </div>
+                    <div class="adv-and-dzen__footer-right">
+                      <div> <img class="adv-and-dzen__footer-left-icon adv-and-dzen__footer-left-icon_1" src='./icons/cool.png' /> </div>
+                      <div>  <img class="adv-and-dzen__footer-left-icon adv-and-dzen__footer-left-icon_2" src='./icons/notCool.png' /></div>
+                      <div> <img class="adv-and-dzen__footer-left-icon adv-and-dzen__footer-left-icon_3" src='./icons/arrow.png' /></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              </div>
+
+              <div class="adv-and-dzen__dzen-wrapper"> 
+              <div class="adv-and-dzen__dzen">
+                <div class="adv-and-dzen__dzen-label">
+                  <img class="adv-and-dzen__dzen-label-img" src='./icons/logo-dzen.png' />
+                  <span> Дзен</span>
+                </div>
+
+                <div class="adv-and-dzen__dzen-title">
+                  <span class="adv-and-dzen__dzen-title-main"> РЕКОМЕНДУЕМ </span>
+                  <ul>
+                    <li>
+                      <div class='adv-and-dzen__dzen-li-img'> </div>
+                      <a href='#'>Кино </a>
+                    </li>
+                    <li>
+                      <div class='adv-and-dzen__dzen-li-img'> </div>
+                      <a href='#'>Путешествия </a>
+                    </li>
+                    <li>
+                      <div class='adv-and-dzen__dzen-li-img'> </div> <a href='#'>Технологии </a>
+                    </li>
+                    <li>
+                      <div class='adv-and-dzen__dzen-li-img'> </div><a href='#'>Стиль </a>
+                    </li>
+                    <li>
+                      <div class='adv-and-dzen__dzen-li-img'> </div><a href='#'>Знаменитости </a>
+                    </li>
+                    <li>
+                      <div class='adv-and-dzen__dzen-li-img'> </div> <a href='#'>Культура </a>
+                    </li>
+                    <li>
+                      <div class='adv-and-dzen__dzen-li-img'> </div> <a href='#'>Спорт </a>
+                    </li>
+                    <li>
+                      <div class='adv-and-dzen__dzen-li-img'> </div> <a href='#'>Финансы </a>
+                    </li>
+                    <li>
+                      <div class='adv-and-dzen__dzen-li-img'> </div> <a href='#'>Политика </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <aside class='aside'>
+      <div class="aside__aside-mail">
+
+        <div class="aside__aside-mail-profile">
+          <span class='aside__aside-mail-login'> Nalog.777</span>
+          <img class='aside__aside-mail-img' src='./icons/avatar.png' />
+        </div>
+        <div class="aside__aside-mail-letters">
+          <span class='aside__aside-mail-label'>Почта</span>
+          <span class='aside__aside-mail-number'>11200</span>
+        </div>
+        <div class="aside__aside-mail-disc">
+          <span> Диск</span>
+        </div>
+
+      </div>
+
+      <div class="aside__aside-yandex-pluz">
+        <img class='aside__aside-yandex-pluz-img' src='./icons/yandex-pluz.png' />
+        <span class='aside__aside-yandex-pluz-letter'> Попробовать Плюс </span>
+      </div>
+    </aside>
+
+
+  </div>
+</body>
+
+</html>
