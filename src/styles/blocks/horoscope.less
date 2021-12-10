@@ -1,0 +1,36 @@
+.horoscope {
+  display: flex;
+  margin-top: 7px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 4px 12px;
+  padding: 12px 20px;
+  border-radius: 8px;
+
+  &__div-img {
+    border-radius: 50%;
+    background-color: #0dc268;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    margin-left: 12px;
+
+    &-main {
+      cursor: pointer;
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    &-title-bot,
+    &-title-top {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 300;
+      font-family: 'Roboto', sans-serif;
+      color: #999;
+    }
+  }
+}

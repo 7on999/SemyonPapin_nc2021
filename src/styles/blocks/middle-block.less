@@ -1,0 +1,54 @@
+.middle-block {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 16fr 7.5fr;
+
+  &__news-mail-titles {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: Helvetica, Arial, sans-serif;
+
+    &_top {
+      margin-left: 0;
+      color: #528fdf;
+    }
+
+    &:hover .middle-block__news-mail-titles_top {
+      text-decoration: underline;
+    }
+
+    &_bot {
+      color: #2c2d2e;
+    }
+  }
+
+  &__news-main {
+    display: flex;
+
+    &-img {
+      min-height: 48px;
+      min-width: 64px;
+      border-radius: 4px;
+      background-image: url('./img/bayden.jpg');
+      background-size: 64px 48px;
+    }
+  }
+
+  &__adv {
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 16%);
+    border-radius: 8px;
+
+    &-img {
+      height: 164px;
+      background-image: url('./img/adv.png') ;
+      background-size: 100%  164px;
+      border-radius: 8px;
+    }
+  }
+}

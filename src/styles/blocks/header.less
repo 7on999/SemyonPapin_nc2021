@@ -1,0 +1,126 @@
+.header {
+  &__top {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    align-items: center;
+
+    &-left {
+      display: flex;
+      align-items: center;
+
+      &-span {
+        margin: 0 30px;
+      }
+    }
+
+    &-right span:nth-child(2) {
+      margin: 0 20px 0 5px;
+      cursor: pointer;
+    }
+
+    &-right span:nth-child(1) {
+      cursor: pointer;
+    }
+    
+    .header__top-right span:nth-child(1) {
+      cursor: pointer;
+    }
+  }
+
+  &__btn-header {
+    background-color: #005ff9;
+    box-shadow: 0 2px 0 0 rgb(0 0 0 / 4%);
+    border: none;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+
+    &:hover {
+      background-color: #005CF1;
+    }
+
+    &_bot {
+      padding: 0;
+      text-align: center;
+      width: 58px;
+      height: 28px;
+      border-radius: 10px;
+    }
+  }
+
+  &__bot {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-titles-ul {
+      display: flex;
+      margin: 5px 0 0 0;
+      padding-left: 0;
+
+      li a {
+        color: #2c2d2e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 8px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif;
+
+        &:hover {
+          background-color: #a5a7ad36;
+        }
+      }
+
+      li:first-child a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+      }
+
+      li:last-child a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1px 8px;
+      }
+    }
+
+    &-app-dots {
+      opacity: 0.3;
+      width: 20px;
+      height: 24px;
+      margin-left: 5px;
+    }
+
+    &-registration {
+      display: flex;
+      align-items: center;
+
+      &-title {
+        font-family: 'Roboto', sans-serif;
+        color: blue;
+        margin-right: 10px;
+        font-weight: 300;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 5px 8px;
+        border-radius: 8px;
+  
+        &:hover {
+          background-color: #a5a7ad36;
+        }
+      }
+    }
+  }
+
+}

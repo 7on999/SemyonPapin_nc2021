@@ -357,7 +357,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .currency__top-item {
@@ -398,7 +397,6 @@
 }
 
 .currency__top-item-div_1 {
-
   margin-top: 2px;
 }
 
@@ -445,7 +443,7 @@
   color: #919399;
 }
 
-.covid_hr {
+.covid__hr {
   margin-top: 13px;
 }
 
@@ -479,13 +477,12 @@
   margin-right: 80px;
 }
 
-.covid_hr2 {
+.covid__hr2 {
   margin-top: 0px;
 }
 
 .covid__chart {
   height: 80px;
-  ;
   background-size: 100% 80px;
   background-image: url('./img/chart-covid.png')
 }
@@ -611,11 +608,9 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.hr_catalogGames {
+.catalogGames__hr {
   margin-top: 16px;
 }
-
-
 
 .catalocatalogGames__games-item-left {
   display: flex;
@@ -735,7 +730,7 @@
   cursor: pointer;
 }
 
-.main-block-rigth {
+.main-block__rigth {
   margin-top: 5px;
   margin-left: 20px;
 }
@@ -788,7 +783,7 @@
   border-bottom: 2px solid #919399;
 }
 
-.hr_categories {
+.categories__hr {
   margin-top: 0;
 }
 
@@ -800,7 +795,7 @@
 
 }
 
-.middle-block__news-mai-titles {
+.middle-block__news-mail-titles {
   display: flex;
   flex-direction:column;
   justify-content: center;
@@ -813,20 +808,18 @@
 }
 
 
-.middle-block__news-mai-titles_top {
+.middle-block__news-mail-titles_top {
   margin-left: 0;
   color: #528fdf;
 }
 
-.middle-block__news-mai-titles:hover .middle-block__news-mai-titles_top {
+.middle-block__news-mail-titles:hover .middle-block__news-mail-titles_top {
   text-decoration: underline;
 }
 
-.middle-block__news-mai-titles_bot {
-
+.middle-block__news-mail-titles_bot {
   color: #2c2d2e;
 }
-
 
 .middle-block__news-main {
   display: flex;

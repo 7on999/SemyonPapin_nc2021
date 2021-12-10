@@ -1,0 +1,81 @@
+.covid {
+  border-radius: 8px;
+  margin-top: 7px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 4px 12px;
+  padding: 12px 20px;
+
+  &__title-top {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 300;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__title-bot {
+    cursor: pointer;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #919399;
+  }
+
+  &__hr {
+    margin-top: 13px;
+  }
+
+  &__location {
+    display: flex;
+    justify-content: space-between;
+
+    &-span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #919399;
+      cursor: pointer;
+
+      &_1 {
+        color: #005ff9;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #005ff9 !important;
+      }
+
+      &_2:hover{
+        border-bottom: 2px solid #919399 !important;
+      }
+
+      &_3 {
+        margin-right: 80px; 
+
+        &:hover {
+          border-bottom: 2px solid #919399 !important;
+        }
+      }
+    }
+  }
+
+  &__hr2 {
+    margin-top: 0px;
+  }
+
+  &__chart {
+    height: 80px;
+    background-size: 100% 80px;
+    background-image: url('./img/chart-covid.png')
+  }
+
+  &__footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

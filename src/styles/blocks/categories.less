@@ -1,0 +1,31 @@
+
+.categories {
+  display: flex;
+
+  div {
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: Helvetica, Arial, sans-serif;
+    height: 27px;
+    color: #2c2d2e;
+
+    :hover {
+      border-bottom: 2px solid #919399;
+    }
+
+    &.categories_active {
+      border-bottom: 2px solid #005ff9 !important;
+      color: #005bd1;
+      font-weight: 700;
+      height: 27px
+    }
+  }
+
+  &__hr {
+    margin-top: 0;
+  }
+
+}
