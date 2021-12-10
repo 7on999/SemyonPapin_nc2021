@@ -53,7 +53,8 @@ gulp.task('bsync', function () {
         server:{
           baseDir: './',
           directory: true
-        }
+        },
+        startPath:'/index.html'
       })
 });
 

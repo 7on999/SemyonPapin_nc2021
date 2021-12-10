@@ -561,7 +561,7 @@
   align-items: center;
 }
 
-.catalocatalogGames__games-item-left-img {
+.catalogGames__games-item-left-img {
   cursor: pointer;
   border-radius: 12px;
   width: 36px;
@@ -569,15 +569,15 @@
   background-size: 36px 36px;
 }
 
-.catalocatalogGames__games-item-left-img_1 {
+.catalogGames__games-item-left-img_1 {
   background-image: url('./img/games1.png');
 }
 
-.catalocatalogGames__games-item-left-img_2 {
+.catalogGames__games-item-left-img_2 {
   background-image: url('./img/games2.png');
 }
 
-.catalocatalogGames__games-item-left-img_3 {
+.catalogGames__games-item-left-img_3 {
   background-image: url('./img/games3.png');
 }
 
@@ -586,7 +586,7 @@
 }
 
 .link-to-resource__titles,
-.catalocatalogGames__games-item-left-info,
+.catalogGames__games-item-left-info,
 .catalogGames__top-titles {
   margin-left: 16px;
 }
@@ -619,6 +619,7 @@
 .catalocatalogGames__games-item-left_2 {
   margin: 25px 0;
 }
+
 
 .catalocatalogGames__games-item-left-info-name {
   color: #2c2d2e;

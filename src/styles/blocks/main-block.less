@@ -55,8 +55,6 @@
 
       &-item {
         width: 100%;
-        padding: 0;
-        margin: 0;
 
         &_2 {
           height: 100%;
@@ -111,8 +109,33 @@
       opacity: 0.2;
     }
 
-    &__footer-btn1,
-    &__footer-btn2 {
+    &-btn1 {
+      background-color: #f0f1f3;
+      color: #005ff9;
+      padding: 8px;
+
+      &:hover {
+        background-color: #cdd1dc;
+      }
+    }
+  }
+
+  
+
+  &__rigth {
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  &__footer{
+
+    
+    &-btn2-div {
+      margin-top: 8px;
+    }
+
+    &-btn1,
+    &-btn2 {
       width: 100%;
       border-radius: 8px;
       font-size: 13px;
@@ -131,14 +154,10 @@
         background-color: #cdd1dc;
       }
     }
-
+    
     &-btn2-div {
       margin-top: 8px;
     }
-  }
 
-  &__rigth {
-    margin-top: 5px;
-    margin-left: 20px;
   }
 }
