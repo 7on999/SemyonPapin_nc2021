@@ -50,7 +50,8 @@ gulp.task('bsync', function () {
   server:{
     baseDir: './dist',
     directory: true
-    }
+    },
+    startPath:'./index.html'
   })
 
   gulp.watch('./src/styles/**/*.less').on('change', gulp.series('less'));
