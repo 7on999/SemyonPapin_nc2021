@@ -47,13 +47,6 @@ return gulp
 .pipe(bsync.stream())
 });
 
-gulp.task('normilize-css', function () {
-return gulp
-.src('./src/normilize.css')
-.pipe(gulp.dest('./dist/'))
-.pipe(bsync.stream())
-});
-
 gulp.task('bsync', function () {
   bsync.init({
   server:{
@@ -70,7 +63,7 @@ gulp.task('bsync', function () {
   gulp.watch('./dist/index.html').on('change', bsync.reload);
 });
 
-gulp.task('build-project', gulp.series('less', 'copy-html', 'copy-img', 'copy-img2', 'copy-img3', 'copy-img4', 'normilize-css'))
+gulp.task('build-project', gulp.series('less', 'copy-html', 'copy-img', 'copy-img2', 'copy-img3', 'copy-img4'))
 
-gulp.task('default', gulp.series( gulp.parallel('less', 'copy-html', 'copy-img', 'copy-img2', 'copy-img3', 'copy-img4', 'normilize-css'), 'bsync'));
+gulp.task('default', gulp.series( gulp.parallel('less', 'copy-html', 'copy-img', 'copy-img2', 'copy-img3', 'copy-img4'), 'bsync'));
 

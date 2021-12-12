@@ -1,0 +1,84 @@
+.search-string{
+
+  margin-top: 10px;
+  width:100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 38px;
+ 
+
+  &__now-looking-for {
+
+      color: #999!important;
+      font-size: 13px;
+      font-family: Helvetica,Arial,sans-serif;
+    
+
+      &-wrapper{
+        position: absolute;
+        right: 14%;
+        display: inline-block;
+        cursor: pointer;
+
+        &:hover  .search-string__now-looking-for-aim{
+          text-decoration: underline #005bd1;
+        }
+      }
+    }
+
+    &__now-looking-for-aim {
+      font-family: Helvetica,Arial,sans-serif;
+      font-size: 13px;
+      color: #005bd1;
+    }
+
+  &__input{
+    width: calc(99% - 107px);
+    padding-right: 48px;
+    padding-left: 40px;
+    height: 100%;
+    font-size: 17px;
+    border: 2px solid @search;
+    border-radius: 8px 0 0 8px;
+    transition: border .5s ease;
+    margin-right: 0;
+    outline:none;
+    font-family: Helvetica,Arial,sans-serif;
+  }
+
+  &__btn{
+    cursor: pointer;
+    font-size: 17px;
+    font-family: Helvetica, Arial, sans-serif;
+    color:white;
+    background-color:@search;
+    height: 100%;
+    width:107px;
+    border:none;
+    margin-left:0px;
+    border-radius: 0 8px 8px 0;
+      transition: box-shadow .5s ease;
+
+    &:hover{
+      background: #f69902;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    height:16px;
+    width:16px;
+    top: 11px;
+    left: 11px;
+  }
+
+  &:hover  &__input{
+    border: 3px solid @search !important;
+  }
+
+  &:focus-within .search-string__now-looking-for-wrapper {
+    display: none;
+  }
+}
+

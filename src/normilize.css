@@ -213,7 +213,6 @@ button::-moz-focus-inner,
 
 a {
   text-decoration: none;
-  color:black;
 }
 li {
   list-style-type: none; /* Убираем маркеры */
