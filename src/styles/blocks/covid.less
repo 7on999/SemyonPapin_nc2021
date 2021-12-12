@@ -21,11 +21,7 @@
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    color: #919399;
-  }
-
-  &__hr {
-    margin-top: 13px;
+    color: @gray;
   }
 
   &__location {
@@ -37,32 +33,29 @@
       font-size: 15px;
       line-height: 20px;
       font-weight: 400;
-      color: #919399;
+      color: @gray;
       cursor: pointer;
 
       &_1 {
-        color: #005ff9;
+        color: @blue1;
         padding-bottom: 5px;
-        border-bottom: 2px solid #005ff9 !important;
+        border-bottom: 2px solid  @blue1 !important;
       }
 
       &_2:hover{
-        border-bottom: 2px solid #919399 !important;
+        border-bottom: 2px solid @gray !important;
       }
 
       &_3 {
         margin-right: 80px; 
 
         &:hover {
-          border-bottom: 2px solid #919399 !important;
+          border-bottom: 2px solid @gray !important;
         }
       }
     }
   }
 
-  &__hr2 {
-    margin-top: 0px;
-  }
 
   &__chart {
     height: 80px;

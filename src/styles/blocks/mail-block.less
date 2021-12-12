@@ -1,0 +1,145 @@
+.mail-block {
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 4px 12px;
+
+  &__img {
+    border-radius: 8px 8px 0 0;
+    height: 68px;
+    background-image: url('./img/mail-img.png');
+    background-size: 100% 68px;
+  }
+
+  &__content {
+    padding: 10px 20px 20px 20px;
+    
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      &-icons {
+        display: flex;
+        align-items: center;
+        margin-right: -7px;
+
+        &-item {
+          cursor: pointer;
+          margin: 0 6px;
+        }
+      }
+
+      &-title {
+        color: blue;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-style: 14px;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__input {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 4.5fr 2.5fr;
+
+    &-item {
+      width: 100%;
+
+      &_2 {
+        height: 100%;
+        padding: 4px 5px;
+      }
+
+      &_1 {
+        padding: 4px 5px;
+      }
+    }
+  }
+
+  &__password {
+    margin-top: 8px;
+  }
+
+  &__btn-password {
+    padding: 8px 15px;
+    font-weight: 300;
+    border-radius: 4px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+
+    &-img {
+      margin-left: 5px;
+    }
+  }
+
+  &__footer{
+
+    &-btn2-div {
+      margin-top: 8px;
+    }
+
+    &-btn1,
+    &-btn2 {
+      width: 100%;
+      border-radius: 8px !important;
+      font-size: 13px;
+      border: 0;
+      cursor: pointer;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+    }
+
+    &-btn1 {
+      background-color:@btn1;
+      color: #005ff9;
+      padding: 8px;
+
+      &:hover {
+        background-color: @hoverBtn2;
+      }
+    }
+    
+    &-btn2-div {
+      margin-top: 8px;
+    }
+
+  }
+
+  &__remember-password {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    &-left span,
+    &-rigth span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+    }
+
+    &-rigth span {
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  
+  &__btn1 {
+    background-color: @btn1;
+    color: #005ff9;
+    padding: 8px;
+
+    &:hover {
+      background-color: @hoverBtn2;
+    }
+  }
+}

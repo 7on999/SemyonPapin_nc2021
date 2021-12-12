@@ -20,26 +20,28 @@
 </head>
 
 <body>
-  <header>
-    <div class="header__top">
 
-      <div class="header__top-left">
-        <img src='https://r.mradx.net/img/44/E22A3B.png' />
-        <span class = 'header__top-left-span'> Быстрый поиск всегда под рукой? Сделать Mail.ru стартовой страницей?</span>
-        <button class = 'header__btn-header'> Да, сделать</button>
-      </div>
+<div class="notification">
+  <div class="notification__left">
+    <img src='https://r.mradx.net/img/44/E22A3B.png' />
+    <span class = 'notification__left-span'> Быстрый поиск всегда под рукой? Сделать Mail.ru стартовой страницей?</span>
+    <button class = 'round-btn-mail'> Да, сделать</button>
+  </div>
 
 
-      <div class="header__top-right">
-        <span> × </span>
-        <span > закрыть </span>
-        <span> 0+ </span>
-      </div>
-    </div>
+  <div class="notification__right">
+    <span> × </span>
+    <span > закрыть </span>
+    <span> 0 + </span>
+  </div>
+</div>
+</div>
 
-    <div class="header__bot"> 
-      <div class="header__bot-titles"> 
-        <ul class="header__bot-titles-ul">
+
+  <header class='header'>
+  
+      <div class="menu-1"> 
+        <ul class="menu-1__titles-ul">
           <li> <a href='#'> Mail.ru </a></li>
           <li> <a href='#'> Почта </a></li>
           <li> <a href='#'> Мой Мир </a></li>
@@ -52,37 +54,38 @@
           <li> <a href='#'> Облако </a></li>
           <li> <a href='#'> VK работа </a></li>
           <li> <a href='#'> VK Combo </a></li>
-          <li> <a href='#'>  <span> Все проекты </span> <img class='header__bot-app-dots' src='./img/addDots.svg'></a></li>
+          <li> <a href='#'>  <span> Все проекты </span> <img class='menu-1__app-dots' src='./img/addDots.svg'></a></li>
         </ul>
       </div>
-      <div class="header__bot-registration">
-        <a href='#' class='header__bot-registration-title' > Регистрация</a>
-        <button class = 'header__btn-header header__btn-header_bot'> Войти </button>
+
+      <div class="header__registration">
+        <a href='#' class='header__registration-title' > Регистрация</a>
+        <button class = 'round-btn-mail round-btn-mail_header'> Войти </button>
       </div>
-    </div>
+
   </header>
 
   <main class='main-block'>
 
     <div class="main-block__left">
 
-      <div class='main-block__mail'>
-          <div class='main-block__mail-img'>  </div>
-          <div class='main-block__mail-content'> 
+      <div class='mail-block'>
+          <div class='mail-block__img'>  </div>
+          <div class='mail-block__content'> 
 
-            <div class="main-block__mail-content-top">
-              <div class="main-block__mail-content-top-title"> <span> Почта </span> </div>
-              <div class="main-block__mail-content-top-icons">
-                <img class='main-block__mail-content-top-icons-item' src='./img/camera.png'>
-                <img class='main-block__mail-content-top-icons-item' src='./img/claud.png'>
-                <img class='main-block__mail-content-top-icons-item' src='./img/calendar.png'>
+            <div class="mail-block__content-top">
+              <div class="mail-block__content-top-title">  Почта  </div>
+              <div class="mail-block__content-top-icons">
+                <img class='mail-block__content-top-icons-item' src='./img/camera.png'>
+                <img class='mail-block__content-top-icons-item' src='./img/claud.png'>
+                <img class='mail-block__content-top-icons-item' src='./img/calendar.png'>
               </div>
             </div>
 
-            <div class="main-block__mail-input">
-              <div>  <input placeholder='Имя ящика' class="main-block__mail-input-item main-block__mail-input-item_1"/> </div>
+            <div class="mail-block__input">
+              <div>  <input placeholder='Имя ящика' class="mail-block__input-item mail-block__input-item_1"/> </div>
               <div> 
-                <select class="main-block__mail-input-item main-block__mail-input-item_2">
+                <select class="mail-block__input-item mail-block__input-item_2">
                   <option>@mail.ru</option>
                   <option>@bk.ru</option>
                   <option>@list.ru</option>
@@ -92,30 +95,30 @@
             </div>
             </div>
 
-            <div class='main-block__mail-password'>
-              <button class='header__btn-header main-block__mail-btn-password'> 
+            <div class='mail-block__password'>
+              <button class='round-btn-mail mail-block__btn-password'> 
                 <span> Ввести пароль </span> 
-                <img class='main-block__mail-btn-password-img' src='./img/arrowSwg.svg'/></button>
+                <img class='mail-block__btn-password-img' src='./img/arrowSwg.svg'/></button>
             </div>
 
-            <div class='main-block__mail-remember-password'>
-              <div class="main-block__mail-remember-password-left"> 
+            <div class='mail-block__remember-password'>
+              <div class="mail-block__remember-password-left"> 
                 <input type='checkbox'> <span>Запомнить </span>
               </div>
-              <div class="main-block__mail-remember-password-rigth"> 
+              <div class="mail-block__remember-password-rigth"> 
                 <span>Забыли пароль? </span>
               </div>
+            
+            </div>
+         
+            <hr class='hr-page'/>
 
+            <div class='mail-block__footer-btn1-div'>
+               <button class='transparent-btn'> Создать почту</button>
             </div>
 
-            <hr class='main-block__mail-hr'/>
-
-            <div class='main-block__footer-btn1-div'>
-               <button class='main-block__footer-btn1'> Создать почту</button>
-            </div>
-
-            <div class='main-block__footer-btn2-div'> 
-              <button class='main-block__footer-btn2 header__btn-header '> Войти через VK ID </button>
+            <div class='mail-block__footer-btn2-div'> 
+              <button class='round-btn-mail mail-block__footer-btn2'> Войти через VK ID </button>
             </div>
 
          </div>
@@ -180,13 +183,13 @@
       <div class='covid'> 
         <div class="covid__title-top"> Короновирус с CODIV-19</div>
         <div class="covid__title-bot"> Новые случаи с 30 марта </div>
-        <hr class='main-block__mail-hr covid__hr'/>
+        <hr class='hr-page hr-page_covid'/>
         <div class="covid__location">
            <div class="covid__location-span covid__location-span_1"> Москва </div>
            <div class="covid__location-span covid__location-span_2"> Россия </div>
            <div class="covid__location-span covid__location-span_3"> Мир </div>
         </div>
-        <hr class='main-block__mail-hr  covid__hr2'/>
+        <hr class='hr-page hr-page_covid-2'/>
 
         <div class='covid__chart'> </div>
         <div class='covid__footer'> 
@@ -217,7 +220,7 @@
           </div>
         </div>
 
-        <hr class='main-block__mail-hr catalogGames__hr'/>
+        <hr class='hr-page hr-page_catalogGames'/>
 
         <div class='catalogGames__games'> 
 
@@ -231,7 +234,7 @@
             </div>
 
             <div class="catalogGames-games-item-right">
-              <button class='main-block__footer-btn1'> Играть</button>
+              <button class='transparent-btn'> Играть</button>
             </div>
           </div>
 
@@ -244,8 +247,8 @@
               </div>
             </div>
 
-            <div class="catalogGames-games-item-right">
-              <button class='main-block__footer-btn1'> Играть</button>
+            <div class="catalogGames__games-item-right">
+              <button class='transparent-btn'> Играть</button>
             </div>
           </div>
 
@@ -258,8 +261,8 @@
               </div>
             </div>
 
-            <div class="catalogGames-games-item-right">
-              <button class='main-block__footer-btn1'> Играть</button>
+            <div class="catalogGames__games-item-right">
+              <button class='transparent-btn'> Играть</button>
             </div>
           </div>
         </div>
@@ -375,13 +378,13 @@
 
     <div class="main-block__rigth"> 
 
-      <div class='search'> 
-        <div class="search__titles">
-          <span class='search__titles_active'> Поиск в интернете </span>
-          <span> Соцсети </span>
-          <span> Картинки </span>
-          <span> Видео </span>
-          <span> Ответы </span>
+      <div class='menu-2'> 
+        <div class="menu-2__titles">
+          <span class='menu-2__titles-item menu-2__titles-item_active'> Поиск в интернете </span>
+          <span class="menu-2__titles-item"> Соцсети </span>
+          <span class="menu-2__titles-item"> Картинки </span>
+          <span class="menu-2__titles-item"> Видео </span>
+          <span class="menu-2__titles-item"> Ответы </span>
         </div>
       </divc>
 
@@ -390,23 +393,23 @@
       </div>
     </div>
 
-    <div class="categories">
-      <div class="categories_active"> Новости </div>
-      <div> COVID-19 </div>
-      <div> Москва </div>
-      <div> Спорт </div>
-      <div> Леди </div>
-      <div> Авто </div>
-      <div> Кино </div>
-      <div> Hi-Tech </div>
-      <div> Игры </div>
-      <div> Дети </div>
-      <div> Здоровье </div>
-      <div> Дом </div>
-      <div> Питомцы </div>
-     
+    <div class="categories-news">
+      <div class="categories-news__item categories-news__item_active"> Новости </div>
+      <div class="categories-news__item"> COVID-19 </div>
+      <div class="categories-news__item"> Москва </div>
+      <div class="categories-news__item"> Спорт </div>
+      <div class="categories-news__item"> Леди </div>
+      <div class="categories-news__item"> Авто </div>
+      <div class="categories-news__item"> Кино </div>
+      <div class="categories-news__item"> Hi-Tech </div>
+      <div class="categories-news__item"> Игры </div>
+      <div class="categories-news__item"> Дети </div>
+      <div class="categories-news__item"> Здоровье </div>
+      <div class="categories-news__item"> Дом </div>
+      <div class="categories-news__item"> Питомцы </div>
     </div>
-    <hr class='main-block__mail-hr categories__hr'/>
+
+    <hr class='hr-page hr-page_categories'/>
 
     <div class="middle-block">
       <div class="middle-block__news">
