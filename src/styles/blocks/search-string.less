@@ -13,6 +13,11 @@
       color: #999!important;
       font-size: 13px;
       font-family: Helvetica,Arial,sans-serif;
+      transition: all 0.3s ease;
+
+      @media(max-width: 960px){
+          font-size: 10px;
+      }
     
 
       &-wrapper{
@@ -20,10 +25,19 @@
         right: 14%;
         display: inline-block;
         cursor: pointer;
+        transition: all 0.5s ease;
 
         &:hover  .search-string__now-looking-for-aim{
           text-decoration: underline #005bd1;
         }
+
+        @media(max-width: 1150px){
+          right: 24%;
+      }
+
+        @media(max-width: 960px){
+          right: 34%;
+      }
       }
     }
 
@@ -31,6 +45,10 @@
       font-family: Helvetica,Arial,sans-serif;
       font-size: 13px;
       color: #005bd1;
+
+      @media(max-width: 960px){
+          font-size: 10px;
+      }
     }
 
   &__input{
@@ -40,8 +58,9 @@
     height: 100%;
     font-size: 17px;
     border: 2px solid @search;
+    box-shadow: inset 0px 0px 0px 0px #f69902;
     border-radius: 8px 0 0 8px;
-    transition: border .5s ease;
+    transition: all .5s ease;
     margin-right: 0;
     outline:none;
     font-family: Helvetica,Arial,sans-serif;
@@ -74,11 +93,13 @@
   }
 
   &:hover  &__input{
-    border: 3px solid @search !important;
+    box-shadow: inset 0px 0px 0px 1px #f69902;
   }
 
   &:focus-within .search-string__now-looking-for-wrapper {
     display: none;
   }
+
+
 }
 
