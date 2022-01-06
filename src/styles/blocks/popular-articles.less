@@ -1,0 +1,22 @@
+.popular-articles {
+  position: relative;
+  margin-top: 48.465px;
+  width:100%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 6fr 24fr;
+
+  &:after {
+    height: 200px;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 3.6rem;
+    width: 5px;
+    border-radius: 5px;
+    background: linear-gradient(
+    130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+    box-shadow: -10px 0 20px 3px #000;
+}
+}

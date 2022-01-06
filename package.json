@@ -1,0 +1,25 @@
+{
+  "name": "css-trics",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000S\u0000e\u0000m\u0000y\u0000o\u0000n\u0000P\u0000a\u0000p\u0000i\u0000n\u0000_\u0000n\u0000c\u00002\u00000\u00002\u00001\u0000\r\u0000 \u0000",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7on999/SemyonPapin_nc2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7on999/SemyonPapin_nc2021/issues"
+  },
+  "homepage": "https://github.com/7on999/SemyonPapin_nc2021#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-less": "^5.0.0"
+  }
+}
