@@ -7,7 +7,7 @@ return gulp
   .src('./src/styles/blocks/index.less')
   .pipe(less())
   .pipe(gulp.dest('./dist'))
-  .pipe(gulp.dest('./docs'))
+  .pipe(gulp.dest('./root'))
   .pipe(bsync.stream())
 });
 
@@ -15,7 +15,7 @@ gulp.task('copy-img', function () {
 return gulp
   .src('./src/img/*.png')
   .pipe(gulp.dest('./dist/img'))
-  .pipe(gulp.dest('./dist/docs'))
+  .pipe(gulp.dest('./dist/root'))
   .pipe(bsync.stream())
 });
 
@@ -31,7 +31,7 @@ gulp.task('copy-img3', function () {
 return gulp
 .src('./src/img/*.svg')
 .pipe(gulp.dest('./dist/img'))
-.pipe(gulp.dest('./docs/img'))
+.pipe(gulp.dest('./root/img'))
 .pipe(bsync.stream())
 });
 
@@ -39,7 +39,7 @@ gulp.task('copy-img4', function () {
   return gulp
   .src('./src/img/*.jpg')
   .pipe(gulp.dest('./dist/img'))
-  .pipe(gulp.dest('./docs/img'))
+  .pipe(gulp.dest('./root/img'))
   .pipe(bsync.stream())
   });
 
@@ -49,7 +49,7 @@ gulp.task('copy-html', function () {
 return gulp
 .src('./src/index.html')
 .pipe(gulp.dest('./dist/'))
-.pipe(gulp.dest('./docs/'))
+.pipe(gulp.dest('./root/'))
 .pipe(bsync.stream())
 });
 
