@@ -7,6 +7,7 @@ return gulp
   .src('./src/styles/blocks/index.less')
   .pipe(less())
   .pipe(gulp.dest('./dist'))
+  .pipe(gulp.dest('./forGithubPages'))
   .pipe(bsync.stream())
 });
 
@@ -14,6 +15,7 @@ gulp.task('copy-img', function () {
 return gulp
   .src('./src/img/*.png')
   .pipe(gulp.dest('./dist/img'))
+  .pipe(gulp.dest('./forGithubPages/img'))
   .pipe(bsync.stream())
 });
 
@@ -44,6 +46,7 @@ gulp.task('copy-html', function () {
 return gulp
 .src('./src/index.html')
 .pipe(gulp.dest('./dist/'))
+.pipe(gulp.dest('./forGithubPages/'))
 .pipe(bsync.stream())
 });
 
