@@ -15,7 +15,7 @@ gulp.task('copy-img', function () {
 return gulp
   .src('./src/img/*.png')
   .pipe(gulp.dest('./dist/img'))
-  .pipe(gulp.dest('./dist/root'))
+  .pipe(gulp.dest('./root/img'))
   .pipe(bsync.stream())
 });
 
@@ -23,7 +23,7 @@ gulp.task('copy-img2', function () {
 return gulp
 .src('./src/img/links/*.png')
 .pipe(gulp.dest('./dist/img/links'))
-.pipe(gulp.dest('./docs/img/links'))
+.pipe(gulp.dest('./root/img/links'))
 .pipe(bsync.stream())
 });
 
