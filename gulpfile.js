@@ -19,26 +19,26 @@ return gulp
   .pipe(bsync.stream())
 });
 
-// gulp.task('copy-img2', function () {
-// return gulp
-// .src('./src/img/links/*.png')
-// .pipe(gulp.dest('./dist/img/links'))
-// .pipe(bsync.stream())
-// });
+gulp.task('copy-img2', function () {
+return gulp
+.src('./src/img/links/*.png')
+.pipe(gulp.dest('./dist/img/links'))
+.pipe(bsync.stream())
+});
 
-// gulp.task('copy-img3', function () {
-// return gulp
-// .src('./src/img/*.svg')
-// .pipe(gulp.dest('./dist/img'))
-// .pipe(bsync.stream())
-// });
+gulp.task('copy-img3', function () {
+return gulp
+.src('./src/img/*.svg')
+.pipe(gulp.dest('./dist/img'))
+.pipe(bsync.stream())
+});
 
-// gulp.task('copy-img4', function () {
-//   return gulp
-//   .src('./src/img/*.jpg')
-//   .pipe(gulp.dest('./dist/img'))
-//   .pipe(bsync.stream())
-//   });
+gulp.task('copy-img4', function () {
+  return gulp
+  .src('./src/img/*.jpg')
+  .pipe(gulp.dest('./dist/img'))
+  .pipe(bsync.stream())
+  });
 
 
 
@@ -66,8 +66,8 @@ gulp.task('bsync', function () {
   gulp.watch('./dist/index.html').on('change', bsync.reload);
 });
 
-// gulp.task('build-project', gulp.series('less', 'copy-html', 'copy-img', 'copy-img2', 'copy-img3', 'copy-img4'))
-gulp.task('build-project', gulp.series('less', 'copy-html', 'copy-img'))
+gulp.task('build-project', gulp.series('less', 'copy-html', 'copy-img', 'copy-img2', 'copy-img3', 'copy-img4'))
+//gulp.task('build-project', gulp.series('less', 'copy-html', 'copy-img'))
 
-// gulp.task('default', gulp.series( gulp.parallel('less', 'copy-html', 'copy-img', 'copy-img2', 'copy-img3', 'copy-img4'), 'bsync'));
-gulp.task('default', gulp.series( gulp.parallel('less', 'copy-html', 'copy-img',), 'bsync'));
+gulp.task('default', gulp.series( gulp.parallel('less', 'copy-html', 'copy-img', 'copy-img2', 'copy-img3', 'copy-img4'), 'bsync'));
+// gulp.task('default', gulp.series( gulp.parallel('less', 'copy-html', 'copy-img',), 'bsync'));
