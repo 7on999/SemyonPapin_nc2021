@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" lang="ru" content="фронтенд, вэб, верстка, язык гипертекстовой разметки, стили">
+  <meta name="keywords" lang="en" content="web, frontend development, html, css">
+  <title>cssTrics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='./index.css'>
+</head>
+
+<body>
+ <header class="header-page">
+  <div class="header-page__logo">
+    <svg class="header-page__logo logo-left" width="28px" height="28px" fill='white' viewBox="0 0 362.62 388.52" data-spin-me="true">
+      <path d="M156.58,239l-88.3,64.75c-10.59,7.06-18.84,11.77-29.43,11.77-21.19,0-38.85-18.84-38.85-40C0,257.83,14.13,244.88,27.08,239l103.6-44.74L27.08,148.34C13,142.46,0,129.51,0,111.85,0,90.66,18.84,73,40,73c10.6,0,17.66,3.53,28.25,11.77l88.3,64.75L144.81,44.74C141.28,20,157.76,0,181.31,0s40,18.84,36.5,43.56L206,149.52l88.3-64.75C304.93,76.53,313.17,73,323.77,73a39.2,39.2,0,0,1,38.85,38.85c0,18.84-12.95,30.61-27.08,36.5L231.93,194.26,335.54,239c14.13,5.88,27.08,18.83,27.08,37.67,0,21.19-18.84,38.85-40,38.85-9.42,0-17.66-4.71-28.26-11.77L206,239l11.77,104.78c3.53,24.72-12.95,44.74-36.5,44.74s-40-18.84-36.5-43.56Z"></path>
+    </svg>
+
+    <svg class=" header-page__logo header-page__logo_word" width="180px" height="28px" fill='white' viewBox="0 0 474.15 58.26">
+      <path d="M46 42.57a4.5 4.5 0 0 0-3 1.13c-4.1 3.46-8.13 5.39-14.08 5.39-10.78 0-18.58-8.93-18.58-20v-.09c0-11 7.88-19.87 18.58-19.87a20.42 20.42 0 0 1 13.48 5.03 4.95 4.95 0 0 0 7.88-3.86 4.94 4.94 0 0 0-1.93-3.94c-4.91-3.79-10.62-6.36-19.35-6.36-17 0-29 13.12-29 29.13v.16c0 16.17 12.23 29 28.64 29 9.09 0 15.12-2.9 20.43-7.56a4.76 4.76 0 0 0 1.61-3.54 4.71 4.71 0 0 0-4.68-4.62zm36.86-17.95c-10.86-2.62-13.43-4.5-13.43-8.85v-.16c0-3.7 3.38-6.68 9.17-6.68 4.43 0 8.61 1.45 13 4.26a4.78 4.78 0 0 0 2.57.72 4.6 4.6 0 0 0 4.67-4.59 4.47 4.47 0 0 0-2.17-3.94 31 31 0 0 0-17.91-5.22c-11.18 0-19.23 6.68-19.23 16.34v.16c0 10.38 6.76 13.92 18.74 16.82 10.46 2.41 12.73 4.58 12.73 8.6v.16c0 4.18-3.86 7.08-10 7.08a24.42 24.42 0 0 1-15.77-5.79 4.79 4.79 0 0 0-7.56 3.7 4.64 4.64 0 0 0 1.94 3.77 35.05 35.05 0 0 0 21.16 7.1c11.83 0 20.11-6.28 20.11-16.82v-.16c0-9.34-6.11-13.6-18.02-16.5zm49.88 0c-10.86-2.57-13.43-4.51-13.43-8.85v-.16c0-3.7 3.38-6.68 9.17-6.68 4.42 0 8.61 1.45 13 4.26a4.78 4.78 0 0 0 2.57.72 4.6 4.6 0 0 0 4.67-4.59 4.47 4.47 0 0 0-2.17-3.94 31 31 0 0 0-17.91-5.22c-11.18 0-19.23 6.68-19.23 16.33v.16c0 10.38 6.76 13.92 18.74 16.82 10.46 2.41 12.71 4.59 12.71 8.61v.16c0 4.18-3.86 7.08-10 7.08a24.42 24.42 0 0 1-15.77-5.79 4.79 4.79 0 0 0-7.56 3.7 4.64 4.64 0 0 0 1.96 3.77 35.05 35.05 0 0 0 21.16 7.08c11.83 0 20.11-6.28 20.11-16.82v-.16c0-9.32-6.11-13.58-18.02-16.48zm45.62 3.22h-15.13a4.79 4.79 0 0 0 0 9.58h15.12a4.79 4.79 0 0 0 0-9.58zm45.64-26.84h-37.45a4.59 4.59 0 0 0 0 9.17h13.68v42.62a5 5 0 0 0 10 0v-42.65h13.77a4.59 4.59 0 0 0 0-9.14zm38.86 0h-20.15a4.91 4.91 0 0 0-5 5v46.79a4.95 4.95 0 0 0 9.89 0v-15.13h12.47l13.68 17.46a5.65 5.65 0 0 0 4.83 2.58 4.67 4.67 0 0 0 4.75-4.59 5.74 5.74 0 0 0-1.61-3.78l-10.78-13.6c7.56-2.33 12.79-7.81 12.79-16.82v-.16a17 17 0 0 0-4.66-12.15c-3.62-3.54-9.17-5.6-16.25-5.6zm10.86 18.51c0 5.71-4.51 9.41-11.58 9.41h-14.53v-18.92h14.39c7.32 0 11.67 3.3 11.67 9.33zm27-18.91a4.89 4.89 0 0 0-5 4.91v47.28a4.95 4.95 0 0 0 9.89 0v-47.32a4.88 4.88 0 0 0-4.98-4.91zm62.67 42a4.5 4.5 0 0 0-3 1.13c-4.1 3.46-8.13 5.39-14.08 5.39-10.78 0-18.58-8.93-18.58-20v-.12c0-11 7.88-19.87 18.58-19.87a20.42 20.42 0 0 1 13.44 5.07 4.95 4.95 0 0 0 7.88-3.86 4.94 4.94 0 0 0-1.93-3.94c-4.98-3.83-10.7-6.4-19.38-6.4-17.06 0-29 13.12-29 29.13v.16c0 16.17 12.23 29 28.64 29 9.09 0 15.12-2.9 20.43-7.56a4.76 4.76 0 0 0 1.61-3.58 4.71 4.71 0 0 0-4.7-4.58zm41-16.82l17.54-16.9a4.81 4.81 0 0 0 1.77-3.7 4.53 4.53 0 0 0-4.7-4.62 5.2 5.2 0 0 0-4.1 1.85l-26.66 26.88v-23.82a4.95 4.95 0 0 0-9.9 0v47.32a4.95 4.95 0 0 0 9.9 0v-11.67l9.17-8.85 18.1 23.09a5 5 0 0 0 4.18 2.33 4.83 4.83 0 0 0 5-4.83 5.36 5.36 0 0 0-1.37-3.54zm51.8-1.13c-10.92-2.65-13.49-4.53-13.49-8.88v-.16c0-3.7 3.38-6.68 9.17-6.68 4.42 0 8.61 1.45 13 4.26a4.78 4.78 0 0 0 2.57.72 4.6 4.6 0 0 0 4.67-4.59 4.47 4.47 0 0 0-2.17-3.94 31 31 0 0 0-17.94-5.22c-11.15 0-19.2 6.68-19.2 16.34v.16c0 10.38 6.76 13.92 18.74 16.82 10.46 2.41 12.71 4.59 12.71 8.61v.16c0 4.18-3.86 7.08-10 7.08a24.42 24.42 0 0 1-15.77-5.79 4.79 4.79 0 0 0-7.56 3.7 4.64 4.64 0 0 0 1.96 3.76 35.05 35.05 0 0 0 21.12 7.1c11.83 0 20.11-6.28 20.11-16.82v-.16c.04-9.34-6.11-13.6-17.98-16.5z"></path>
+      </svg>
+  </div>
+
+  <div class="header-page__main"> 
+  <div class="main-nav">
+    <div class="main-nav__item">Articles</div>
+    <div class="main-nav__item">Videos</div>
+    <div class="main-nav__item">Almanag</div>
+    <div class="main-nav__item">Newsletter</div>
+    <div class="main-nav__item">Guides</div>
+    <div class="main-nav__item">Books</div>
+  </div>
+
+  <div class="block-icons">
+    <div class="block-icons__item block-icons__item_search">
+      <svg class="block-icons__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.0726 10.4326C12.4801 10.4326 10.4 12.5451 10.4 15.1053C10.4 17.6978 12.5125 19.7779 15.0726 19.7779C17.6651 19.7779 19.7453 17.6654 19.7453 15.1053C19.744 12.544 17.664 10.4326 15.0726 10.4326Z" fill="white"></path>
+        <path d="M16.0327 0.447479C7.42401 0.447479 0.447693 7.4238 0.447693 16.0324C0.447693 24.6398 7.42401 31.6161 16.0314 31.6161C24.64 31.6161 31.6163 24.6398 31.6163 16.0324C31.6163 7.4238 24.64 0.447479 16.0327 0.447479ZM23.6163 24.0324C23.3926 24.2562 23.0401 24.385 22.6563 24.385C22.2726 24.385 21.9526 24.2575 21.6963 24.0324L18.7526 21.0887L18.4651 21.2487C17.4088 21.825 16.2576 22.145 15.0724 22.145C11.1998 22.145 8.06509 19.0087 8.06509 15.1376C8.06509 11.265 11.2013 8.13023 15.0724 8.13023C18.9451 8.13023 22.0798 11.2665 22.0798 15.1376C22.0798 16.5138 21.6961 17.8251 20.9273 18.9776L20.7348 19.2976L23.6473 22.2101C23.8711 22.4664 24.0311 22.7864 24.0311 23.1376C23.9998 23.4563 23.8723 23.7763 23.616 24.0326L23.6163 24.0324Z" fill="white"></path>
+        </svg>
+    </div>
+    <div class="block-icons__item block-icons__item_profile">
+      <svg class="block-icons__svg" width="34" height="34" viewBox="0 0 34 34" fill="red" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 1.7C11.5335 1.7 6.48243 4.61655 3.74917 9.35C1.0172 14.0835 1.0172 19.9165 3.74917 24.65C6.48246 29.3835 11.5335 32.3 17 32.3C20.4918 32.3133 23.8809 31.1193 26.5917 28.9199C29.9014 26.2557 31.9559 22.3365 32.2602 18.0984C32.5657 13.8603 31.0954 9.68748 28.2003 6.57682C25.3063 3.46636 21.249 1.69986 17.0003 1.69986L17 1.7ZM27.9956 24.411C27.2651 22.1412 25.014 20.2514 21.9925 19.2447C20.7069 20.6405 18.8967 21.4361 17 21.4361C15.1021 21.4347 13.292 20.6405 12.0074 19.2447C8.98463 20.2514 6.73335 22.1413 6.00439 24.411C4.20212 21.7388 3.43579 18.5008 3.8475 15.3041C4.25921 12.1073 5.82242 9.17082 8.24234 7.04174C10.6622 4.91276 13.7752 3.7387 16.9987 3.7387C20.2221 3.7387 23.3353 4.91276 25.7564 7.04041C28.1763 9.16939 29.7395 12.1057 30.1513 15.3027C30.563 18.4995 29.7966 21.7376 27.9957 24.411L27.9956 24.411Z" fill="white"></path>
+        <path d="M22.5049 13.6092C22.5049 16.9919 20.0399 19.736 17 19.736C13.9586 19.736 11.4937 16.9921 11.4937 13.6092C11.4937 10.2251 13.9587 7.48236 17 7.48236C20.0401 7.48236 22.5049 10.2249 22.5049 13.6092Z" fill="white"></path>
+        </svg>
+    </div>
+  </div>
+</div>
+ </header>
+
+ <main class='main-page'>
+  <div class="middle-top-block">
+    <div class="middle-top-block__left-div"> 
+      <img class="middle-top-block__img" src='https://css-tricks.com/wp-content/uploads/2022/01/nintendo-nes-css-reset-system.jpg'/>
+    </div>
+    <div class="middle-top-block__description"> 
+      <div class="tags"> reset </div>
+      <div class="middle-top-block__title"> Notes on Josh Comeau’s Custom CSS Reset </div>
+      <div class="middle-top-block__text"> 
+        We recently talked with Elad Shechter on his new CSS reset, 
+        and shortly after that Josh Comeau blogged his. We’re in something of a new era of CSS resets where… you kind of don’t need one? 
+        There isn’t that many major differences between browsers on default styling, and by the time you’re off and running […] 
+      </div>
+      <div class="signature signature_middle-top">
+        <img src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg' class="avatar"/> 
+        <span class="signature__name">Chris Coyier</span>
+        <span class="signature__date"> on Jan 5, 2022</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="popular-articles">
+    <div class="main-card"> 
+      <div class="main-card__content">
+        <div class="main-card__content-top-label"> The <br/> Mounthly <br/> Mixup </div>
+        <div class="main-card__content-sponsor"> Sponsored by </div>
+        <div class="main-card__content-sponsor-value"> CodePen </div>
+      </div>
+    </div>
+
+    <div class="cards"> 
+
+      <div class="mini-card mini-card_1"> 
+
+        <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Nov 29, 2021 </div>
+        <h3 class="mini-card__title"> A Handy Little System for Animated Entrances in CSS </h3>
+        <div class="mini-card__tags">
+          <span class="mini-card__tags-item">animation</span>
+          <span class="mini-card__tags-item">animation-delay</span>
+          <span class="mini-card__tags-item">css animation</span>
+          <span class="mini-card__tags-item">keyframes</span>
+        </div>
+        <div class="mini-card__author"> 
+          <img class='avatar' src='	https://secure.gravatar.com/avatar/d7a76198094edbb412cf4d525b16d545?s=80&d=retro&r=pg'/>
+          <span class='mini-card__author-span'> Neale Van Fleet </span>
+        </div>
+      </div>
+
+      <div class="mini-card mini-card_2"> 
+
+        <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Apr 12, 2017 </div>
+        <h3 class="mini-card__title"> 
+          Interviewing as a Front-End Engineer in San Francisco  </h3>
+        <div class="mini-card__author"> 
+          <img class='avatar' src='	https://secure.gravatar.com/avatar/7a0c12788a838bfa0bf6048526ee6711?s=80&d=retro&r=pg'/>
+          <span class='mini-card__author-span'>
+            Philip Walton  </span>
+        </div>
+      </div>
+      <div class="mini-card mini-card_3"> 
+
+        <div class="mini-card__time"> <strong class="mini-card__time-strong"> Almanac </strong> on Jul 14, 2022 </div>
+        <h3 class="mini-card__title"> :where  </h3>
+        <div class="language-css">
+          <span class="language-css__item language-css__item_yellow">main :where(h1, h2, h3)</span> 
+          <span class="language-css__item language-css__item_green">{</span> 
+            <br/>
+            <span class="language-css__item language-css__item_green">color:</span> 
+          <span class="language-css__item language-css__item_yellow">#f8a100</span>
+           <span class="language-css__item language-css__item_green">; }</span>
+          </div>
+        <div class="mini-card__tags">
+          <span class="mini-card__tags-item">:where</span>
+        </div>
+        <div class="mini-card__author"> 
+          <img class='avatar' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg'/>
+          <span class='mini-card__author-span'> Chris Coyier </span>
+        </div>
+      </div>
+      <div class="mini-card mini-card_3"> 
+
+        <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Jul 14, 2021 </div>
+        <h3 class="mini-card__title"> 
+          Additive Animation with the Web Animations API  </h3>
+        <div class="mini-card__tags">
+          <span class="mini-card__tags-item">animation</span>
+          <span class="mini-card__tags-item">waapi</span>
+        </div>
+        <div class="mini-card__author"> 
+          <img class='avatar' src='https://secure.gravatar.com/avatar/5f4f5f5767f27047cdac0892bf94bd24?s=80&d=retro&r=pg'/>
+          <span class='mini-card__author-span'> Dan Vilson </span>
+        </div>
+      </div>
+
+      <div class="mini-card mini-card_4"> 
+
+        <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on May 15, 2018 </div>
+        <h3 class="mini-card__title"> 
+          It All Started With Emoji: Color Typography on the Web  </h3>
+        <div class="mini-card__tags">
+          <span class="mini-card__tags-item">emoji</span>
+          <span class="mini-card__tags-item">typography</span>
+          <span class="mini-card__tags-item">web fonts</span>
+        </div>
+        <div class="mini-card__author"> 
+          <img class='avatar' src='	https://secure.gravatar.com/avatar/7b27d41bc94bc689f23c33aa62157dcb?s=80&d=retro&r=pg'/>
+          <span class='mini-card__author-span'> 
+            Ollie Williams  </span>
+        </div>
+      </div>
+
+
+   <div class="mini-card mini-card_5"> 
+
+        <div class="mini-card__time"> 
+          <strong class="mini-card__time-strong"> 
+          Snippet </strong> onFeb 19, 2020  
+        </div>
+        <h3 class="mini-card__title"> 
+          How To Generate a Random Color in JavaScript  </h3>
+        <div class="mini-card__tags">
+          <span class="mini-card__tags-item">color</span>
+          <span class="mini-card__tags-item">hex</span>
+          <span class="mini-card__tags-item">random</span>
+        </div>
+        <div class="mini-card__author"> 
+          <img class='avatar' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg'/>
+          <span class='mini-card__author-span'> 
+            Chris Coyier  </span>
+        </div>
+      </div>
+
+      <div class="mini-card mini-card_6"> 
+
+        <div class="mini-card__time"> <strong class="mini-card__time-strong"> Almanac </strong> on Feb 1, 2022 </div>
+        <h3 class="mini-card__title"> caption-side  </h3>
+        <div class="language-css">
+          <span class="language-css__item language-css__item_yellow">table</span> 
+          <span class="language-css__item language-css__item_green">{ caption-side:</span> 
+          <span class="language-css__item language-css__item_yellow">top</span>
+           <span class="language-css__item language-css__item_green">; }</span>
+          </div>
+        <div class="mini-card__tags">
+          <span class="mini-card__tags-item">caption-side</span>
+          <span class="mini-card__tags-item">tables</span>
+        </div>
+        <div class="mini-card__author"> 
+          <img class='avatar' src='	https://secure.gravatar.com/avatar/b8eb0184e62e8a6e71a2d1d7be558248?s=80&d=retro&r=pg'/>
+          <span class='mini-card__author-span'> 
+            Louis Lazaris  </span>
+        </div>
+      </div>
+
+      <div class="mini-card mini-card_7"> 
+
+       
+        <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Jul 14, 2021 </div>
+        <h3 class="mini-card__title"> 
+          Additive Animation with the Web Animations API  </h3>
+        <div class="mini-card__tags">
+          <span class="mini-card__tags-item">animation</span>
+          <span class="mini-card__tags-item">waapi</span>
+        </div>
+        <div class="mini-card__author"> 
+          <img class='avatar' src='https://secure.gravatar.com/avatar/5f4f5f5767f27047cdac0892bf94bd24?s=80&d=retro&r=pg'/>
+          <span class='mini-card__author-span'> Dan Vilson </span>
+        </div>
+      </div>
+
+      <div class="mini-card mini-card_8"> 
+
+        <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Jan 5, 2021 </div>
+        <h3 class="mini-card__title"> How to Make a Component That Supports Multiple Frameworks in a Monorepo </h3>
+        <div class="mini-card__tags">
+          <span class="mini-card__tags-item">angular</span>
+          <span class="mini-card__tags-item">components</span>
+          <span class="mini-card__tags-item">framework</span>
+          <span class="mini-card__tags-item">monorepo</span>
+          <span class="mini-card__tags-item">svelte</span>
+          <span class="mini-card__tags-item">vue</span>
+        </div>
+        <div class="mini-card__author"> 
+          <img class='avatar' src='https://secure.gravatar.com/avatar/500466438a19184c54107076786686a6?s=80&d=retro&r=pg'/>
+          <span class='mini-card__author-span'> Rob Levin </span>
+        </div>
+      </div>
+
+      <div class="mini-card mini-card_9"> 
+
+        <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Jun 13, 2021 </div>
+        <h3 class="mini-card__title"> How to Make a Pure CSS 3D Package Toggle  </h3>
+        <div class="mini-card__tags">
+          <span class="mini-card__tags-item">3d</span>
+          <span class="mini-card__tags-item">css animation</span>
+          <span class="mini-card__tags-item">custom properties</span>
+        </div>
+        <div class="mini-card__author"> 
+          <img class='avatar' src='https://css-tricks.com/wp-content/uploads/2019/09/bear-with-cap-scaled-80x80.png'/>
+          <span class='mini-card__author-span'> Jhey Tompkins </span>
+        </div>
+      </div>
+
+      <div class="mini-card mini-card_10"> 
+
+        <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Nov 29, 2021 </div>
+        <h3 class="mini-card__title">  How to Make a Scroll-Triggered Animation With Basic JavaScript  </h3>
+        <div class="mini-card__tags">
+          <span class="mini-card__tags-item">IntersectionObserver</span>
+          <span class="mini-card__tags-item">Scroll Linked Animation</span>
+          <span class="mini-card__tags-item">css animation</span>
+          <span class="mini-card__tags-item">keyframes</span>
+        </div>
+        <div class="mini-card__author"> 
+          <img class='avatar' src='https://css-tricks.com/wp-content/uploads/2022/01/4Ww1VA5o_400x400-80x80.jpg'/>
+          <span class='mini-card__author-span'> Md Shuvo </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+    <div class="articles-and-sidebar">
+      <div class="left-block"> 
+      <div class="articles">
+
+        <div class="article">
+         
+          <img class='article__img' src='https://i2.wp.com/css-tricks.com/wp-content/uploads/2022/01/nintendo-nes-css-reset-system.jpg?resize=1000%2C453&ssl=1'/>
+         
+          <div class="article__text-part"> 
+              <div class="tags"> Reset </div>
+              <h2 class="article__title"> Notes on Josh Comeau’s Custom CSS Reset </h2>
+
+              <p class="article__paragraph"> 
+                We recently talked with Elad Shechter on 
+                <a class="article__paragraph-link" href="https://css-tricks.com/an-interview-with-elad-shechter-on-the-new-css-reset/">his new CSS reset</a>
+                , and shortly after that Josh Comeau 
+                <a class="article__paragraph-link" href="https://www.joshwcomeau.com/css/custom-css-reset/" rel="noopener">blogged his</a> . 
+              </p>
+
+
+              <p class="article__paragraph">
+                We’re in something of a new era of CSS resets where… you kind of don’t need one? There isn’t …
+              </p>
+
+              <div class="signature signature_article">
+                <img src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg' class="avatar"/> 
+                <span class="signature__name">Chris Coyier</span>
+                <span class="signature__date"> on Jan 5, 2022 </span>
+              </div>
+          </div>
+        </div>
+
+         <div class="article">
+         
+          <img class='article__img' src='https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/12/fixed-background.jpg?resize=1000%2C500&ssl=1'/>
+         
+          <div class="article__text-part"> 
+ 
+              <a href='#' class="tags"> background-attachment </a>
+              <a href='#' class="tags">  background-image</a>
+              <a href='#' class="tags"> fixed  </a>
+              <a href='#' class="tags">  position </a>
+              <a href='#' class="tags">  images </a>
+      
+              <h2 class="article__title"> The Search For a Fixed Background Effect With Inline Images  </h2>
+
+              <p class="article__paragraph"> 
+                I was working on a client project a few days ago and wanted to create a certain effect on an 
+                <code>&lt;img&gt;</code>
+                . See, background images can do the effect I was looking for somewhat easily with 
+                <code>background-attachment: fixed;</code>
+                . With …
+              </p>
+
+              <div class="signature signature_article">
+                <img src='https://secure.gravatar.com/avatar/12bdc43bf75752148c5ad4fedce5fbc5?s=80&d=retro&r=pg' class="avatar"/> 
+                <span class="signature__name"> Alex Lazar </span>
+                <span class="signature__date"> on Jan 6, 2022 </span>
+              </div>
+          </div>
+        </div>
+
+        <div class="article">
+         
+          <img class='article__img' src='https://i2.wp.com/css-tricks.com/wp-content/uploads/2022/01/button-frameworks.jpg?resize=1000%2C500&ssl=1'/>
+         
+          <div class="article__text-part"> 
+            <a href='#' class="tags"> angular </a>
+            <a href='#' class="tags">  components</a>
+            <a href='#' class="tags"> framework  </a>
+            <a href='#' class="tags">  monorepo </a>
+            <a href='#' class="tags">  svelte </a>
+            <a href='#' class="tags">  vue </a>
+              <h2 class="article__title"> How to Make a Component 
+                That Supports Multiple Frameworks in a Monorepo </h2>
+
+              <p class="article__paragraph"> 
+                Your mission — should you decide to accept it — is to build a Button component in four frameworks, but, only use one button.css file!
+              </p>
+
+
+              <p class="article__paragraph">
+                This idea is very important to me. I’ve been working on a component library called …
+              </p>
+
+              <div class="signature signature_article">
+                <img src='https://secure.gravatar.com/avatar/500466438a19184c54107076786686a6?s=80&d=retro&r=pg' class="avatar"/> 
+                <span class="signature__name">Rob Levin</span>
+                <span class="signature__date"> on Jan 5, 2022 </span>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="article">
+         
+          <img class='article__img' src='https://css-tricks.com/wp-content/uploads/2018/11/scrollbar-styling.jpg'/>
+         
+          <div class="article__text-part"> 
+            <a href='#' class="tags"> opinion </a>
+            <a href='#' class="tags">  user agent stylesheets</a>
+              <h2 class="article__title"> Should CSS Override Default Browser Styles?  </h2>
+
+              <p class="article__paragraph"> 
+                CSS overrides can change the default look of almost anything:
+              </p>
+
+         <ul>
+           <li class="article__paragraph"> 
+            You can use CSS to 
+            <a class="article__paragraph-link" href="https://css-tricks.com/zero-trickery-custom-radios-and-checkboxes/">override what a checkbox or radio button</a>
+            looks like, but if you don’t, the checkbox will look like a default checkbox on your operating system 
+          </li>
+         </ul>
+          … 
+        
+              <div class="signature signature_article">
+                <img src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg' class="avatar"/> 
+                <span class="signature__name">Chris Coyier</span>
+                <span class="signature__date"> on Jan 4, 2022 </span>
+              </div>
+          </div>
+        </div> 
+
+        
+        <div class="article article_row-3">
+         
+          <img class='article__img' src='https://i0.wp.com/css-tricks.com/wp-content/uploads/2018/09/css-tricks-jetpack-heart.jpg?resize=1000%2C500&ssl=1'/>
+         
+          <div class="article__text-part"> 
+     
+              <h2 class="article__title">  Jetpack Features We Love and Use at CSS-Tricks  </h2>
+
+              <p class="article__paragraph"> 
+                We use and love 
+                <a class="article__paragraph-link" href="https://jetpack.com/?aff=8638" rel="noopener">Jetpack</a>
+                around here. It’s a WordPress plugin that brings a whole suite of functionality to your site ranging from security to marketing with lots of ridiculously useful stuff in between! Here’s our favorite features around here.…
+              </p>
+
+              <div class="signature signature_article">
+                 <div class='signature__heart' > ❥ </div>
+                  <div>Sponsored </div>
+                </div>
+          </div>
+        </div> 
+
+        
+        <div class="article article_row-3">
+         
+          <img class='article__img' src='https://css-tricks.com/wp-content/uploads/2022/01/fingerprint-gradient.jpg'/>
+         
+          <div class="article__text-part"> 
+            <a href='#' class="tags"> security </a>
+              <h2 class="article__title"> CSS-Based Fingerprinting  </h2>
+
+              <p class="article__paragraph"> 
+                Fingerprinting is bad. It’s a term that refers to building up enough metadata about a user that you can essentially figure out 
+                who they are. JavaScript has access to all sorts of fingerprinting possibilities, which then combined with the IP …
+              </p>
+
+              <div class="signature signature_article">
+                <img src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg' class="avatar"/> 
+                <span class="signature__name">Chris Coyier</span>
+                <span class="signature__date"> on Jan 3, 2022 </span>
+              </div>
+          </div>
+        </div> 
+
+
+        <div class="article">
+         
+          <img class='article__img' src='https://i1.wp.com/css-tricks.com/wp-content/uploads/2021/12/unnamed-file.png?resize=1000%2C500&ssl=1'/>
+         
+          <div class="article__text-part"> 
+            <a href='#' class="tags"> browser extension </a>
+          
+              <h2 class="article__title"> How to Create a Browser Extension  </h2>
+
+              <p class="article__paragraph"> 
+                I’ll bet you are using browser extensions right now. Some of them are extremely popular and useful, 
+                like ad blockers, password managers, and PDF viewers. These extensions (or “add-ons”) are not limited to those purposes
+                 — you can do a …
+              </p>
+
+
+
+              <div class="signature signature_article">
+                <img src='https://css-tricks.com/wp-content/uploads/2021/12/Portrait_2x_optimized-scaled-80x80.jpg' class="avatar"/> 
+                <span class="signature__name"> Lars Kölker  </span>
+                <span class="signature__date"> on Jan 3, 2022 </span>
+              </div>
+          </div>
+        </div>
+
+        <div class="article">
+         
+          <img class='article__img' src='https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/12/css-tricks-logo-gradient-outline.png?resize=1000%2C500&ssl=1'/>
+         
+          <div class="article__text-part"> 
+  
+              <h2 class="article__title"> overflow-clip-margin  </h2>
+
+              <p class="article__paragraph"> 
+                The CSS 
+                <code>overflow-clip-margin</code>
+                property determines how far the overflow of an element can go beyond the element’s 
+                box before being clipped. This area is called the 
+                <strong>overflow clip edge</strong>
+              </p>
+
+              <img src='./img/css.png'/>
+
+              <div class="signature signature_article">
+                <img src='https://css-tricks.com/wp-content/uploads/2021/06/57611810-80x80.jpeg' class="avatar"/> 
+                <span class="signature__name"> Joel Olawanle </span>
+                <span class="signature__date"> on Jan 3, 2022 </span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-page btn-page_keep-browser">
+        <span> Keep browsing in the archives </span>
+      </div>
+    </div>
+
+      <div class="sidebar"> 
+
+        <div class="sidebar-item sidebar-item_1">
+          <img class="sidebar-item__img sidebar-item__img_1" src='https://res.cloudinary.com/css-tricks/image/upload/w_600,q_auto,f_auto/buysellads/uu/7/103855/1640115778-CSS-Tricks-Sidebar_600x600.png'/>
+          
+          <div class="sidebar-item__text-block">
+            <div class="sidebar-item__title"> Sponsored </div>
+            <div class="sidebar-item__text"> Ready to reduce toil and respond to incidents fast? Download the e-book now. </div>
+          </div>
+          
+        </div>
+
+
+        <div class="sidebar-item sidebar-item_2">
+          <img class="sidebar-item__img sidebar-item__img_2" src='https://res.cloudinary.com/css-tricks/image/upload/w_600,q_auto,f_auto/buysellads/uu/7/87530/1618003998-MC_CSSTricks_Logo_600x600-3.png'/>
+          
+          <div class="sidebar-item__text-block">
+            <div class="sidebar-item__title"> Sponsored </div>
+            <div class="sidebar-item__text"> Drive better results with a smart marketing platform. Try Mailchimp today. </div>
+          </div>
+          
+        </div>
+
+
+        <div class="sidebar-item sidebar-item_3">
+          <img class="sidebar-item__img sidebar-item__img_3" src='https://res.cloudinary.com/css-tricks/image/upload/w_600,q_auto,f_auto/buysellads/uu/7/100182/1632497294-DODX3915-600x600-2.jpg'/>
+          
+          <div class="sidebar-item__text-block">
+            <div class="sidebar-item__title"> Sponsored </div>
+            <div class="sidebar-item__text"> DigitalOcean App Platform, a fully managed PaaS solution to build modern, cloud native apps. Try now with $100 credit. </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="popular-articles">
+      <div class="main-card"> 
+        <div class="main-card__content">
+          <div class="main-card__content-top-label"> The <br/> Mounthly <br/> Mixup </div>
+          <div class="main-card__content-sponsor"> Sponsored by </div>
+          <div class="main-card__content-sponsor-value"> CodePen </div>
+        </div>
+      </div>
+  
+      <div class="cards"> 
+
+        <div class="mini-card mini-card_1"> 
+  
+          <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Nov 29, 2021 </div>
+          <h3 class="mini-card__title"> A Handy Little System for Animated Entrances in CSS </h3>
+          <div class="mini-card__tags">
+            <span class="mini-card__tags-item">animation</span>
+            <span class="mini-card__tags-item">animation-delay</span>
+            <span class="mini-card__tags-item">css animation</span>
+            <span class="mini-card__tags-item">keyframes</span>
+          </div>
+          <div class="mini-card__author"> 
+            <img class='avatar' src='	https://secure.gravatar.com/avatar/d7a76198094edbb412cf4d525b16d545?s=80&d=retro&r=pg'/>
+            <span class='mini-card__author-span'> Neale Van Fleet </span>
+          </div>
+        </div>
+  
+        <div class="mini-card mini-card_2"> 
+  
+          <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Apr 12, 2017 </div>
+          <h3 class="mini-card__title"> 
+            Interviewing as a Front-End Engineer in San Francisco  </h3>
+          <div class="mini-card__author"> 
+            <img class='avatar' src='	https://secure.gravatar.com/avatar/7a0c12788a838bfa0bf6048526ee6711?s=80&d=retro&r=pg'/>
+            <span class='mini-card__author-span'>
+              Philip Walton  </span>
+          </div>
+        </div>
+        <div class="mini-card mini-card_3"> 
+  
+          <div class="mini-card__time"> <strong class="mini-card__time-strong"> Almanac </strong> on Jul 14, 2022 </div>
+          <h3 class="mini-card__title"> :where  </h3>
+          <div class="language-css">
+            <span class="language-css__item language-css__item_yellow">main :where(h1, h2, h3)</span> 
+            <span class="language-css__item language-css__item_green">{</span> 
+              <br/>
+              <span class="language-css__item language-css__item_green">color:</span> 
+            <span class="language-css__item language-css__item_yellow">#f8a100</span>
+             <span class="language-css__item language-css__item_green">; }</span>
+            </div>
+          <div class="mini-card__tags">
+            <span class="mini-card__tags-item">:where</span>
+          </div>
+          <div class="mini-card__author"> 
+            <img class='avatar' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg'/>
+            <span class='mini-card__author-span'> Chris Coyier </span>
+          </div>
+        </div>
+        <div class="mini-card mini-card_3"> 
+  
+          <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Jul 14, 2021 </div>
+          <h3 class="mini-card__title"> 
+            Additive Animation with the Web Animations API  </h3>
+          <div class="mini-card__tags">
+            <span class="mini-card__tags-item">animation</span>
+            <span class="mini-card__tags-item">waapi</span>
+          </div>
+          <div class="mini-card__author"> 
+            <img class='avatar' src='https://secure.gravatar.com/avatar/5f4f5f5767f27047cdac0892bf94bd24?s=80&d=retro&r=pg'/>
+            <span class='mini-card__author-span'> Dan Vilson </span>
+          </div>
+        </div>
+  
+        <div class="mini-card mini-card_4"> 
+  
+          <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on May 15, 2018 </div>
+          <h3 class="mini-card__title"> 
+            It All Started With Emoji: Color Typography on the Web  </h3>
+          <div class="mini-card__tags">
+            <span class="mini-card__tags-item">emoji</span>
+            <span class="mini-card__tags-item">typography</span>
+            <span class="mini-card__tags-item">web fonts</span>
+          </div>
+          <div class="mini-card__author"> 
+            <img class='avatar' src='	https://secure.gravatar.com/avatar/7b27d41bc94bc689f23c33aa62157dcb?s=80&d=retro&r=pg'/>
+            <span class='mini-card__author-span'> 
+              Ollie Williams  </span>
+          </div>
+        </div>
+
+
+     <div class="mini-card mini-card_5"> 
+  
+          <div class="mini-card__time"> 
+            <strong class="mini-card__time-strong"> 
+            Snippet </strong> onFeb 19, 2020  
+          </div>
+          <h3 class="mini-card__title"> 
+            How To Generate a Random Color in JavaScript  </h3>
+          <div class="mini-card__tags">
+            <span class="mini-card__tags-item">color</span>
+            <span class="mini-card__tags-item">hex</span>
+            <span class="mini-card__tags-item">random</span>
+          </div>
+          <div class="mini-card__author"> 
+            <img class='avatar' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg'/>
+            <span class='mini-card__author-span'> 
+              Chris Coyier  </span>
+          </div>
+        </div>
+  
+        <div class="mini-card mini-card_6"> 
+  
+          <div class="mini-card__time"> <strong class="mini-card__time-strong"> Almanac </strong> on Feb 1, 2022 </div>
+          <h3 class="mini-card__title"> caption-side  </h3>
+          <div class="language-css">
+            <span class="language-css__item language-css__item_yellow">table</span> 
+            <span class="language-css__item language-css__item_green">{ caption-side:</span> 
+            <span class="language-css__item language-css__item_yellow">top</span>
+             <span class="language-css__item language-css__item_green">; }</span>
+            </div>
+          <div class="mini-card__tags">
+            <span class="mini-card__tags-item">caption-side</span>
+            <span class="mini-card__tags-item">tables</span>
+          </div>
+          <div class="mini-card__author"> 
+            <img class='avatar' src='	https://secure.gravatar.com/avatar/b8eb0184e62e8a6e71a2d1d7be558248?s=80&d=retro&r=pg'/>
+            <span class='mini-card__author-span'> 
+              Louis Lazaris  </span>
+          </div>
+        </div>
+
+        <div class="mini-card mini-card_7"> 
+  
+         
+          <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Jul 14, 2021 </div>
+          <h3 class="mini-card__title"> 
+            Additive Animation with the Web Animations API  </h3>
+          <div class="mini-card__tags">
+            <span class="mini-card__tags-item">animation</span>
+            <span class="mini-card__tags-item">waapi</span>
+          </div>
+          <div class="mini-card__author"> 
+            <img class='avatar' src='https://secure.gravatar.com/avatar/5f4f5f5767f27047cdac0892bf94bd24?s=80&d=retro&r=pg'/>
+            <span class='mini-card__author-span'> Dan Vilson </span>
+          </div>
+        </div>
+
+        <div class="mini-card mini-card_8"> 
+  
+          <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Jan 5, 2021 </div>
+          <h3 class="mini-card__title"> How to Make a Component That Supports Multiple Frameworks in a Monorepo </h3>
+          <div class="mini-card__tags">
+            <span class="mini-card__tags-item">angular</span>
+            <span class="mini-card__tags-item">components</span>
+            <span class="mini-card__tags-item">framework</span>
+            <span class="mini-card__tags-item">monorepo</span>
+            <span class="mini-card__tags-item">svelte</span>
+            <span class="mini-card__tags-item">vue</span>
+          </div>
+          <div class="mini-card__author"> 
+            <img class='avatar' src='https://secure.gravatar.com/avatar/500466438a19184c54107076786686a6?s=80&d=retro&r=pg'/>
+            <span class='mini-card__author-span'> Rob Levin </span>
+          </div>
+        </div>
+
+        <div class="mini-card mini-card_9"> 
+  
+          <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Jun 13, 2021 </div>
+          <h3 class="mini-card__title"> How to Make a Pure CSS 3D Package Toggle  </h3>
+          <div class="mini-card__tags">
+            <span class="mini-card__tags-item">3d</span>
+            <span class="mini-card__tags-item">css animation</span>
+            <span class="mini-card__tags-item">custom properties</span>
+          </div>
+          <div class="mini-card__author"> 
+            <img class='avatar' src='https://css-tricks.com/wp-content/uploads/2019/09/bear-with-cap-scaled-80x80.png'/>
+            <span class='mini-card__author-span'> Jhey Tompkins </span>
+          </div>
+        </div>
+
+        <div class="mini-card mini-card_10"> 
+  
+          <div class="mini-card__time"> <strong class="mini-card__time-strong"> Article </strong> on Nov 29, 2021 </div>
+          <h3 class="mini-card__title">  How to Make a Scroll-Triggered Animation With Basic JavaScript  </h3>
+          <div class="mini-card__tags">
+            <span class="mini-card__tags-item">IntersectionObserver</span>
+            <span class="mini-card__tags-item">Scroll Linked Animation</span>
+            <span class="mini-card__tags-item">css animation</span>
+            <span class="mini-card__tags-item">keyframes</span>
+          </div>
+          <div class="mini-card__author"> 
+            <img class='avatar' src='https://css-tricks.com/wp-content/uploads/2022/01/4Ww1VA5o_400x400-80x80.jpg'/>
+            <span class='mini-card__author-span'> Md Shuvo </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+ </main>
+
+ <footer class='footer-page'> 
+  <svg class="logo-star" width="35px" height="35px" viewBox="0 0 362.62 388.52" data-spin-me="false" fill='url(#orange-to-pink)'>
+    <path d="M156.58,239l-88.3,64.75c-10.59,7.06-18.84,11.77-29.43,11.77-21.19,0-38.85-18.84-38.85-40C0,257.83,14.13,244.88,27.08,239l103.6-44.74L27.08,148.34C13,142.46,0,129.51,0,111.85,0,90.66,18.84,73,40,73c10.6,0,17.66,3.53,28.25,11.77l88.3,64.75L144.81,44.74C141.28,20,157.76,0,181.31,0s40,18.84,36.5,43.56L206,149.52l88.3-64.75C304.93,76.53,313.17,73,323.77,73a39.2,39.2,0,0,1,38.85,38.85c0,18.84-12.95,30.61-27.08,36.5L231.93,194.26,335.54,239c14.13,5.88,27.08,18.83,27.08,37.67,0,21.19-18.84,38.85-40,38.85-9.42,0-17.66-4.71-28.26-11.77L206,239l11.77,104.78c3.53,24.72-12.95,44.74-36.5,44.74s-40-18.84-36.5-43.56Z"></path>
+  </svg>
+  
+  <div class="footer-page__background"> 
+  <div class="footer-page__top">
+     <div class="footer-label">
+      CSS-Tricks is created by  <a class='footer-label__link' href="https://chriscoyier.net">Chris</a>
+      and a <br/>
+      <a class='footer-label__link' href="/about">team</a>
+      of swell&nbsp;people.
+     </div>
+
+  <div class="footer-form-wrap">
+    <form class="footer-form" action="https://chriscoyier.us2.list-manage.com/subscribe/post?u=155f5a9ccc4e24c318130cace&amp;id=197f127a68" method="post" id="mc-embedded-subscribe-form">
+      <h4 class="footer-form__title" >Keep up to date on web dev</h4>
+      <p class="footer-form__label" > with our hand-crafted weekly newsletter</p>
+      <div class="footer-form__input-and-btn">
+      <input type="email"  class="footer-form__input"  placeholder="smart@cookie.com" required>
+      <button class="btn-page btn-page_form"> Subscribe </button>
+      </div>
+      </form>
+  </div>
+  </div>
+
+    <div class="link-grid">
+      <div class="link-grid__column">
+        <div class="link-grid__column-item">
+          <h5 class='link-grid__item-title'> Tech </h5>
+          <ul class='link-grid__ul'>
+            <li class='link-grid__li'> 
+              <a href="https://wordpress.org/">WordPress</a>
+              <span class='link-grid__span'>(CMS)</span>
+            </li>
+            <li class='link-grid__li'>
+              <a href="/jetpack/">Jetpack</a>
+              <span class='link-grid__span'>(Search, Backup)</span>
+            </li>
+            <li class='link-grid__li'>
+              <a href="https://woocommerce.com/?aff=8638">WooCommerce</a>
+              <span class='link-grid__span'>(eCommerce)</span>
+            </li>
+            <li class='link-grid__li'>
+              <a href="https://localwp.com/">Local</a>
+              <span class='link-grid__span'>(Development)</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class='link-grid__item-title'> Hosting </h5>
+          <ul class='link-grid__ul'>
+            <li class='link-grid__li'>
+               <a href="https://share.getf.ly/k96n2f">Flywheel</a> 
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="link-grid__column">
+        <div class="link-grid__column-item">
+          <h5 class='link-grid__item-title'> Family </h5>
+          <ul class='link-grid__ul'>
+            <li class='link-grid__li'> 
+              <a href="#"> CodePen </a>
+            </li>
+            <li class='link-grid__li'>
+              <a href="#"> ShopTalk Show </a>
+            </li>
+          </ul>
+        </div>
+        <div class="link-grid__column-item">
+          <h5 class='link-grid__item-title'> Minicites </h5>
+          <ul class='link-grid__ul'>
+            <li class='link-grid__li'>
+               <a href="#">The Power of Serverless</a> 
+            </li>
+           <li class='link-grid__li'>
+               <a href="#"> Upcoming Conferences </a> 
+          </li>
+          <li class='link-grid__li'>
+              <a href="#">Coding Fonts</a> 
+          </li>
+          </ul>
+        </div>
+      </div>
+
+     <div class="link-grid__column">
+        <div class="link-grid__column-item">
+          <h5 class='link-grid__item-title'> Contact </h5>
+          <ul class='link-grid__ul'>
+
+            <li class='link-grid__li'> 
+              <a href="mailto:team@css-tricks.com">Email</a>
+            </li>
+
+            <li class='link-grid__li'>
+              <a href="https://www.notion.so/csstricks/Sponsorship-Possibilities-cb5b33a3f6f64c239220547fe7965d78">Sponsorship Info</a>
+            </li>
+
+            <li class='link-grid__li'>
+              <a href="/guest-writing-for-css-tricks/">Guest Writing</a>
+            </li>
+          </ul>
+        </div>
+        <div class="link-grid__column-item"> 
+          <h5 class='link-grid__item-title'> Buy </h5>
+          <ul class='link-grid__ul'>
+            <li class='link-grid__li'>
+               <a href="#"> Posters & Swag </a> 
+            </li>
+           <li class='link-grid__li'>
+               <a href="#"> Membership </a> 
+          </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="link-grid__column">
+        <div class="link-grid__column-item">
+          <h5 class='link-grid__item-title'> FOLLOW </h5>
+          <ul class='link-grid__ul'>
+            <li class='link-grid__li'>
+              <a href="https://twitter.com/css">Twitter</a>
+            </li>
+           <li class='link-grid__li'>
+            <a href="https://www.instagram.com/real_css_tricks/">Instagram</a>
+          </li>
+          <li class='link-grid__li'>
+            <a href="https://www.youtube.com/user/realcsstricks">YouTube</a>
+          </li>
+
+          <li class='link-grid__li'>
+            <a href="https://codepen.io/team/css-tricks">CodePen</a>
+          </li>
+
+          <li class='link-grid__li'>
+            <a href="https://github.com/CSS-Tricks">GitHub</a>
+          </li>
+
+          <li class='link-grid__li'>
+            <a href="https://podcasts.apple.com/us/podcast/css-tricks-screencasts/id273881728">iTunes</a>
+          </li>
+
+          <li class='link-grid__li'>
+            <a href="/feed/">RSS</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <svg width="0" height="0" class="screen-reader">
+    <defs>
+    <linearGradient id="orange-to-pink" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0%" stop-color="#ff7a18"></stop>
+    <stop offset="40%" stop-color="#af002d"></stop>
+    <stop offset="100%" stop-color="#319197"></stop>
+    </linearGradient>
+    </defs>
+    </svg>
+ </footer>
+
+ <!-- <svg width="0" height="0" class="screen-reader">
+  <defs>
+  <linearGradient id="orange-to-pink" x1="0" x2="1" y1="0" y2="1">
+  <stop offset="0%" stop-color="#ff7a18"></stop>
+  <stop offset="40%" stop-color="#af002d"></stop>
+  <stop offset="100%" stop-color="#319197"></stop>
+  </linearGradient>
+  </defs>
+  </svg> -->
+</body>
+
+</html>

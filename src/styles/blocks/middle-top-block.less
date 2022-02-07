@@ -1,0 +1,90 @@
+.middle-top-block {
+  // background-color:red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // height: 500px;
+  background: #fff;
+
+
+  &__left-div{
+    position: relative;
+    &:before{
+      content: "";
+      z-index: 3;
+      background: linear-gradient(
+        130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+      height: 100%;
+      width:120%;
+      opacity: .75;
+      position: absolute;
+      mix-blend-mode: screen;
+    }
+    &:after {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      z-index: 3;
+      left: 75%;
+      height: 100%;
+      top: 0;
+      width: 50%;
+      background: linear-gradient(
+      90deg,hsla(0,0%,100%,0) 0,rgba(70, 56, 56, 0.013) 8.1%,hsla(0,0%,100%,.049) 15.5%,hsla(0,0%,100%,.104) 22.5%,hsla(0,0%,100%,.175) 29%,hsla(0,0%,100%,.259) 35.3%,hsla(0,0%,100%,.352) 41.2%,hsla(0,0%,100%,.45) 47.1%,hsla(0,0%,100%,.55) 52.9%,hsla(0,0%,100%,.648) 58.8%,hsla(0,0%,100%,.741) 64.7%,hsla(0,0%,100%,.825) 71%,hsla(0,0%,100%,.896) 77.5%,hsla(0,0%,100%,.951) 84.5%,hsla(0,0%,100%,.987) 91.9%,#fff);
+    }
+  }
+  &__img {
+    object-fit: cover;
+    max-width: none;
+    width: 120%;
+    height: 100%;
+  }
+
+  &__description{
+    z-index: 4;
+    padding: 3rem;
+  }
+
+  &__title{
+    margin-top: 7px;
+    font-family: 'Loto', sans-serif;
+    font-style: normal;
+    font-size: clamp(2.0rem,calc(1.9rem + 0.6vw),2.8rem);
+    font-weight: 900;
+    line-height: 1.1;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+
+  &__text {
+    font-family: 'Loto';
+    color: #474747;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    line-height: 1.7;
+  }
+
+  // &__footer{
+  // display: flex;
+  // align-items: center;
+  // margin-top: 8%;
+    
+  //   &-name{
+  //     cursor: pointer;
+  //     margin-right: 5px;
+  //     font-weight: 700;
+  //     &:hover{
+  //       opacity: 0.7;
+  //     }
+  //   }
+
+  //   &-date {
+  //     color: #565656;
+  //     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  //     font-weight: 500;
+
+  //   }
+  // } 
+
+}

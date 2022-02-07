@@ -1,0 +1,127 @@
+.mini-card{
+  box-sizing: border-box;
+  width: 24vw;
+  height: 90%;
+  min-width: 300px;
+  min-height: 350px;
+  box-shadow: -2rem 0 3rem -2rem #000;
+  padding:25px;
+  border-radius: 16px;
+  background: linear-gradient(85deg,#434343,#262626);
+  color: #fff;
+  position: relative;
+  margin-left: -130px;
+  transition: all ease 0.3s;
+
+  &:hover{
+    transform: rotate(3deg) translateY(-30px);
+    &~.mini-card{
+      transform:  translateX(160px);
+    }
+  }
+
+  &__time{
+    color: #777;
+    margin-bottom: 10px;
+    
+    &-strong{
+    color: #d4d4d4;
+  }
+}
+&__tags{
+  &-item{
+    cursor: pointer;
+    margin-right: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color:@orange;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+}
+&__title{
+  cursor: pointer;
+  line-height: 120%;
+  color: #fff;
+  letter-spacing: .03rem;
+    font-weight: 800;
+    font-size: 1.3rem;
+    margin: 0 0 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    &:hover{
+      opacity: 0.7;
+    }
+}
+
+&__author{
+  bottom:25px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  &-span{
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 600;
+   cursor:pointer;
+   &:hover{
+     opacity: 0.7;
+   }
+  }
+}
+
+  &_1{
+    margin-left: 0!important;
+
+    // left: 0px;
+    z-index: 1;
+  }
+
+  &_2{
+   
+    // left: 180px;
+    z-index: 2;
+  }
+
+  &_3{
+    // left: 360px;
+    z-index: 3;
+  }
+
+  &_4{
+    // left: 540px;
+    z-index: 4;
+  }
+
+  &_5{
+    // left: 720px;
+    z-index: 5;
+  }
+
+  &_6{
+    // left:900px;
+    z-index:6;
+  }
+
+  &_7{
+    // left:1080px;
+    z-index:7;
+  }
+
+  &_8{
+    // left: 1260px;
+    z-index:8;
+  }
+  &_9{
+    // left: 1440px;
+    z-index:9;
+  }
+
+  &_10{
+    // left: 1620px;
+    z-index:10;
+  }
+}
