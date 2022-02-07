@@ -1,0 +1,26 @@
+{
+  "name": "mail-clone",
+  "version": "1.0.0",
+  "description": "mail-clone",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7on999/SemyonPapin_nc2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7on999/SemyonPapin_nc2021/issues"
+  },
+  "homepage": "https://github.com/7on999/SemyonPapin_nc2021#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-less": "^5.0.0"
+  }
+}

@@ -1,0 +1,117 @@
+.article {
+  position: relative;
+  border-radius:8px;
+  transition: box-shadow .5s;
+  cursor:pointer;
+  box-shadow: 0 2px 14px rgb(0 0 0 / 8%);
+  width:300px;
+  height: 300px;
+
+  
+  &:hover{
+    box-shadow: 2px 2px 6px 2px rgb(0 0 0 / 30%);
+    .article__cansel-img {
+      opacity: 1;
+    }
+  }
+
+
+  &__img {
+    border-radius:8px 8px 0 0;
+    height: 168px;
+    width: 100%;
+    background-size: cover;
+   
+    &_1{
+      background-image:url("https://pulse.imgsmail.ru/imgpreview?key=pic1073486650600467694&mb=pulse&stream_id=lenta_main_mail_ru_v1&crop=fd&fu=1&h=208&w=388");
+    }
+
+    &_2{
+      background-image: url('https://pulse.imgsmail.ru/imgpreview?key=pic7687525079289623913&mb=pulse&stream_id=lenta_main_mail_ru_v1&crop=fd&fu=1&h=208&w=388');
+    }
+
+    &_3{
+      background-image: url('https://webpulse.imgsmail.ru/imgpreview?key=pulse_cabinet-image-809000bb-7c8f-44ae-a68d-c479f07ac420&mb=webpulse&stream_id=lenta_main_mail_ru_v1&crop=fd&fu=1&h=208&w=388');
+    }
+
+
+    &_4{
+      background-image: url('https://pulse.imgsmail.ru/imgpreview?key=pic8716402849730254769&mb=pulse&stream_id=lenta_main_mail_ru_v1&crop=fd&fu=1&h=208&w=388');
+    }
+
+    &_5{
+      background-image: url('https://pulse.imgsmail.ru/imgpreview?key=pic6752052024824494104&mb=pulse&stream_id=lenta_main_mail_ru_v1&crop=fd&fu=1&h=208&w=388');
+    }
+
+    &_6{
+      background-image: url('https://webpulse.imgsmail.ru/imgpreview?fr=srchimg&key=pulse_cabinet-file-440e7f7d-2cce-4a9d-a1b5-e4039a2911f4&mb=webpulse&stream_id=lenta_main_mail_ru_v1&crop=fd&fu=1&h=208&w=388');
+    }
+  }
+
+  &__cansel-img {
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    background-image: url('../../img/4.png');
+    position:absolute;
+    top:15px;
+    right:15px;
+    z-index:2;
+    opacity:0;
+    transition: all .5s;
+  }
+
+
+  &__title {
+    color: #2c2d2e;
+    padding:0 16px;
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  &__bot {
+    padding: 0 16px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+
+    &-amount{
+      font-size: 13px;
+      line-height: inherit;
+      color: #2c2d2e;
+
+      &_likes{
+        margin-left: 10px;
+      }
+    }
+
+      &-category{
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #2c2d2e;
+        white-space: nowrap;
+        &:hover{
+          text-decoration: underline;
+         }
+
+         &_sport{
+          color:@blue2;
+         }
+      }
+      &-likes{
+        // right:0;
+        // position: absolute;
+        align-items: center;
+        display: flex;
+      }
+    }
+ 
+}
+

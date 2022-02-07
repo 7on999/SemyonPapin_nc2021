@@ -1,0 +1,96 @@
+.catalogGames {
+  margin-top: 7px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 4px 12px;
+  padding: 12px 20px;
+  border-radius: 8px;
+
+  &__top-img {
+    width: 36px;
+    height: 36px;
+    background-image: url('./img/gamesMain.png');
+    background-size: 36px 36px;
+  }
+
+  &__games-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+      display: flex;
+
+      &_2 {
+        margin: 25px 0;
+      }
+      
+
+      &-img {
+        cursor: pointer;
+        border-radius: 12px;
+        width: 36px;
+        height: 36px;
+        background-size: 36px 36px;
+  
+        &_1 {
+          background-image: url('./img/games1.png');
+        }
+  
+        &_2 {
+          background-image: url('./img/games2.png');
+        }
+  
+        &_3 {
+          background-image: url('./img/games3.png');
+        }
+      }
+      // catalocatalogGames__games-item-left-info
+      &-info {
+        margin-left: 16px;
+
+
+
+        &-name {
+          color: #2c2d2e;
+          font-size: 13px;
+          line-height: 20px;
+          font-family: Helvetica, Arial, sans-serif;
+          cursor: pointer;
+          font-weight: 700;
+        }
+
+        &-genre {
+          color: @gray;
+          font-size: 13px;
+          line-height: 20px;
+          cursor: pointer;
+          font-family: Helvetica, Arial, sans-serif;
+        }
+      }
+    }
+  }
+
+  &__top {
+    display: flex;
+
+    &-titles {
+      margin-left: 16px;
+
+      &_1 {
+        cursor: pointer;
+        text-transform: capitalize;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 300;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      &_2 {
+        cursor: pointer;
+        font-size: 13px;
+        color: @gray;
+        font-weight: 300;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+    }
+  }
+}

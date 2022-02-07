@@ -1,0 +1,44 @@
+.heart {
+  width: 9px; // ширина
+  height: 9px; // высота
+  background-color:  #A5A7AD; // цвет
+  transform: rotate(45deg);
+  position: relative; // установим родителя
+  margin-left: 30px;
+
+  &:hover{
+    background-color:  red; // цвет
+    
+  &:before,
+  &:after {
+      background-color:  red;
+  }
+  }
+
+  &:before,
+  &:after {
+      content : ''; // обязательное свойство
+      display: block;
+      width: 9px;
+      height: 9px;
+      background-color:  #A5A7AD;
+      border-radius: 50%; // закругление радиуса
+      position: absolute;
+  }
+  &:before{
+    top: -4.5px;
+    left: 0;
+  }
+  &:after{
+    top: 0;
+    left: -4.5px;
+  }
+
+}  
+
+.test {
+  &:hover{
+    fill:'black'
+  }
+
+}

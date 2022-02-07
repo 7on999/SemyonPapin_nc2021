@@ -1,0 +1,42 @@
+
+.categories-news {
+  display: flex;
+  margin-top: 13px;
+  
+  &__item {
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: Helvetica, Arial, sans-serif;
+    height: 27px;
+    color: #2c2d2e;
+
+    &:hover {
+      border-bottom: 2px solid @gray;
+    }
+
+    &_active {
+      border-bottom: 2px solid @blue1 !important;
+      color: @blue1;
+      font-weight: 700;
+      height: 27px;
+    }
+  }
+
+  @media(max-width: 1150px){
+    &__item {
+      font-size: 13px;
+      margin-right:10px;
+    }
+  }
+
+  @media(max-width: 960px){
+    &__item {
+      font-size: 10px;
+      margin-right:5px;
+    }
+  }
+
+}

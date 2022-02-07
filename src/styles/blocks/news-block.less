@@ -1,0 +1,97 @@
+
+.news-block {
+
+
+  &__titles {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: Helvetica, Arial, sans-serif;
+
+    &_top {
+      margin-left: 0;
+      color: #005bd1;;
+    }
+
+    &:hover &_top {
+      text-decoration: underline;
+    }
+
+    &_bot {
+      color: #2c2d2e;
+      font-weight: 400;
+      font-family: Helvetica,Arial,sans-serif;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__main {
+    display: flex;
+
+    &-img {
+      height: 48px;
+      width: 64px;
+      border-radius: 4px;
+      background-image: url('./img/bayden.jpg');
+      background-size: 64px 48px;
+    }
+  }
+
+  &__news-list {
+    &-ul {
+      margin: 10px 0 0 0;
+      padding:0;
+
+      &-wrapper {
+        display: flex;
+        align-items: center;
+
+
+        &-a1 {
+          font-weight: 700;
+          font-size: 11px;
+          letter-spacing: .8px;
+          text-transform: uppercase;
+          line-height: 16px;
+          color: #2c2d2e !important;
+          text-decoration: none;
+          vertical-align: bottom;
+          margin-right: 5px !important;
+
+          &:hover{
+            text-decoration: underline;
+          }
+      }
+
+    
+      }
+      &-item {
+        margin-left: 4px;
+        margin-bottom:10px;
+        font-size: 15px;
+        font-family: Helvetica,Arial,sans-serif;
+        list-style-type: none;
+      
+        a{
+          text-decoration: none;
+          color: #005bd1;
+        
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+       
+        }
+    }
+  }
+}
+
+// color: #333;
+// background: #fff;
+// font-size: 15px;
+// line-height: 20px;

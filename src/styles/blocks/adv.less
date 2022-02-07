@@ -1,0 +1,61 @@
+body {
+  min-width:1290px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.adv-big {
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 16%);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow .5s ease;
+
+  &:hover{
+    box-shadow: 2px 8px 19px rgb(0 0 0 / 60%);
+  }
+
+  &__img {
+    height: 164px;
+    background-image: url('./img/adv.png') ;
+    background-size: 100%  164px;
+    border-radius: 8px 8px 0 0 ;
+  }
+
+  &__text{
+    padding: 0 16px;
+    margin-top: 10px;
+  }
+
+  &__title1{
+    word-break: break-word !important;
+    font-weight: bold!important;
+    color: #000 !important;
+    font-size: 17px;
+    font-family: Helvetica,Arial,sans-serif;
+  }
+
+  &__title2{
+    font-family: Helvetica,Arial,sans-serif;
+    color: #000 !important;
+    font-size: 15px!important;
+  }
+
+  &__footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+
+    span:nth-child(1){
+      font-size: 11px;
+      color: #333;
+      font-family: Helvetica,Arial,sans-serif;
+    }
+
+    span:nth-child(2){
+      font-size: 11px;
+      color: #999;
+      font-family: Helvetica,Arial,sans-serif;
+    }
+  }
+
+}
